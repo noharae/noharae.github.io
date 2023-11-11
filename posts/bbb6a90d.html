@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><!-- hexo injector head_begin start -->
+<link rel="stylesheet" href="/css/bilicard.css">
+<!-- hexo injector head_begin end -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons8-flower-32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons8-flower-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons8-flower-16.png">
+  <link rel="mask-icon" href="/images/icons8-flower-32.png" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans SC:300,300italic,400,400italic,700,700italic|monospace:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"noharae.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+  <meta property="og:type" content="article">
+<meta property="og:title" content="blog用 语法整理">
+<meta property="og:url" content="https://noharae.github.io/posts/bbb6a90d.html">
+<meta property="og:site_name" content="野原">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-04-02T14:04:32.000Z">
+<meta property="article:modified_time" content="2023-06-21T07:35:41.000Z">
+<meta property="article:author" content="望月木">
+<meta property="article:tag" content="blog">
+<meta property="article:tag" content="笔记">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://noharae.github.io/posts/bbb6a90d.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>blog用 语法整理 | 野原</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="野原" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">野原</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-追番">
+
+    <a href="/bangumis/" rel="section"><i class="fa fa-tv fa-fw"></i>追番</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://noharae.github.io/posts/bbb6a90d.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar-2.jpg">
+      <meta itemprop="name" content="望月木">
+      <meta itemprop="description" content="<br>望月木's blog<br>随意堆放些喜欢的东西<br>请善用分类和标签进行检索<br><br>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="野原">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          blog用 语法整理
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-04-02 22:04:32" itemprop="dateCreated datePublished" datetime="2023-04-02T22:04:32+08:00">2023-04-02</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9D%82%E8%B4%A7%E5%A0%86/" itemprop="url" rel="index"><span itemprop="name">杂货堆</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note defult">
+            <p>日常记不住，整理一下。 </p>
+          </div>
+
+
+
+<h2 id="centerquote"><a href="#centerquote" class="headerlink" title="centerquote"></a>centerquote</h2><p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% cq %&#125; 居中引用 &#123;% endcq %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>居中引用 </p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<hr>
+<h2 id="注音"><a href="#注音" class="headerlink" title="注音"></a>注音</h2><p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;ruby&gt;ご飯&lt;rt&gt;ごはん&lt;/rt&gt;&lt;/ruby&gt;</span><br><span class="line">&lt;ruby&gt;ご&lt;rt&gt;&lt;/rt&gt;飯&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;はん&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><ruby>ご飯<rt>ごはん</rt></ruby><br><ruby>ご<rt></rt>飯<rp>（</rp><rt>はん</rt><rp>）</rp></ruby></p>
+<hr>
+<h2 id="字体颜色与高亮"><a href="#字体颜色与高亮" class="headerlink" title="字体颜色与高亮"></a>字体颜色与高亮</h2><p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;strong style=&quot;color:#ff0000;&quot;&gt;红色&lt;/strong&gt;</span><br><span class="line">&lt;span style=&quot;background:#FFFFBB;&quot;&gt;荧光&lt;/span&gt;</span><br><span class="line">&lt;font size=6&gt;大小为6&lt;/font&gt;</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p><strong style="color:#ff0000;">红色</strong></p>
+<p><span style="background:#FFFFBB;">荧光</span></p>
+<p><font size="6">大小为6</font></p>
+<hr>
+<h2 id="内容折叠"><a href="#内容折叠" class="headerlink" title="内容折叠"></a>内容折叠</h2><p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;details&gt;</span><br><span class="line">&lt;summary&gt;标题&lt;/summary&gt;</span><br><span class="line">&lt;pre&gt;&lt;code&gt;内容</span><br><span class="line">&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line">&lt;/details&gt;</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<details>
+<summary>标题</summary>
+<pre><code>内容
+</code></pre>
+</details>
+
+<hr>
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note danger %&#125; 危险 &#123;% endnote %&#125;</span><br><span class="line">&#123;% note warning %&#125; 警告 &#123;% endnote %&#125;</span><br><span class="line">&#123;% note default %&#125; 默认 &#123;% endnote %&#125;</span><br><span class="line">&#123;% note info %&#125; 信息 &#123;% endnote %&#125;</span><br><span class="line">&#123;% note success %&#125; 成功 &#123;% endnote %&#125;</span><br><span class="line">&#123;% note primary %&#125; 主要 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<div class="note danger">
+            <p>危险 </p>
+          </div>
+
+<div class="note warning">
+            <p>警告 </p>
+          </div>
+
+<div class="note default">
+            <p>默认 </p>
+          </div>
+
+<div class="note info">
+            <p>信息 </p>
+          </div>
+
+<div class="note success">
+            <p>成功 </p>
+          </div>
+
+<div class="note primary">
+            <p>主要 </p>
+          </div>
+
+<hr>
+<h2 id="Label"><a href="#Label" class="headerlink" title="Label"></a>Label</h2><p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% label danger@危险 %&#125; &#123;% label warning@警告 %&#125; &#123;% label default@默认 %&#125; &#123;% label info@信息 %&#125; &#123;% label success@成功 %&#125;   &#123;% label primary@主要 %&#125; </span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+ <span class="label danger">危险</span> <span class="label warning">警告</span> <span class="label default">默认</span> <span class="label info">信息</span> <span class="label success">成功</span>   <span class="label primary">主要</span> 
+
+<hr>
+<h2 id="Tabs"><a href="#Tabs" class="headerlink" title="Tabs"></a>Tabs</h2><p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;% tabs 选项卡的名称,1 %&#125; &lt;!--默认为1，若为-1则隐藏--&gt; </span><br><span class="line">&lt;!-- tab --&gt;</span><br><span class="line">选项卡1的内容</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab --&gt;</span><br><span class="line">选项卡2的内容</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab 可以另外命名 --&gt;</span><br><span class="line">**这一选项卡的内容**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<div class="tabs" id="选项卡的名称"><ul class="nav-tabs"><li class="tab active"><a href="#选项卡的名称-1">选项卡的名称 1</a></li><li class="tab"><a href="#选项卡的名称-2">选项卡的名称 2</a></li><li class="tab"><a href="#选项卡的名称-3">可以另外命名</a></li></ul><div class="tab-content"><div class="tab-pane active" id="选项卡的名称-1"><p>选项卡1的内容</p></div><div class="tab-pane" id="选项卡的名称-2"><p>选项卡2的内容</p></div><div class="tab-pane" id="选项卡的名称-3"><p><strong>这一选项卡的内容</strong></p></div></div></div>
+
+<hr>
+<h2 id="Button"><a href="#Button" class="headerlink" title="Button"></a>Button</h2><p>基本代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% button url, text, icon, title %&#125;</span><br><span class="line"> &lt;!--icon：FontAwesome 图标，有图标的话可以不输入text--&gt;</span><br><span class="line"> &lt;!--title : 鼠标悬停时的提示--&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>首页按钮代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% button url, 首页, home fa-fw, 首页desu %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<a class="btn" target="_blank" rel="noopener" href="https://noharae.eu.org/" title="首页desu">
+            <i class="fa fa-home fa-fw"></i>首页
+          </a>
+
+<hr>
+<p>上&#x2F;下一章相对链接代码：</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;text-center&quot;</span>&gt;&#123;% btn <span class="meta">#, Previous Chapter, arrow-left fa-fw fa-lg, Previous Chapter (Full Image) %&#125; &#123;% btn #, Next Chapter, arrow-right fa-fw fa-lg, Next Chapter (Label) %&#125;&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<div class="text-center"><a class="btn" href="#" title="Previous Chapter (Full Image)">
+            <i class="fa fa-arrow-left fa-fw fa-lg"></i>Previous Chapter
+          </a> <a class="btn" href="#" title="Next Chapter (Label)">
+            <i class="fa fa-arrow-right fa-fw fa-lg"></i>Next Chapter
+          </a></div>
+
+
+
+
+
+<!--
+
+其它信息头
+
+updated: 
+hide: false
+published: true
+sticky: 0
+password: 
+
+
+
+相对文章链接引用：
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% post_link 文章文件名（不要后缀） 文章标题（可选） %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>可以直接用生成的链接而不是文件名</p>
+<p>图标备用：bars fa-fw</p>
+<p>–&gt;</p>
+-->
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/blog/" rel="tag"># blog</a>
+              <a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"># 笔记</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/38d7e36d.html" rel="prev" title="少革剧场版脚本【C part】">
+      <i class="fa fa-chevron-left"></i> 少革剧场版脚本【C part】
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/47134114.html" rel="next" title="MIUI降级">
+      MIUI降级 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#centerquote"><span class="nav-number">1.</span> <span class="nav-text">centerquote</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E9%9F%B3"><span class="nav-number">2.</span> <span class="nav-text">注音</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2%E4%B8%8E%E9%AB%98%E4%BA%AE"><span class="nav-number">3.</span> <span class="nav-text">字体颜色与高亮</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%85%E5%AE%B9%E6%8A%98%E5%8F%A0"><span class="nav-number">4.</span> <span class="nav-text">内容折叠</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Note"><span class="nav-number">5.</span> <span class="nav-text">Note</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Label"><span class="nav-number">6.</span> <span class="nav-text">Label</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tabs"><span class="nav-number">7.</span> <span class="nav-text">Tabs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Button"><span class="nav-number">8.</span> <span class="nav-text">Button</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="望月木"
+      src="/uploads/avatar-2.jpg">
+  <p class="site-author-name" itemprop="name">望月木</p>
+  <div class="site-description" itemprop="description"><br>望月木's blog<br>随意堆放些喜欢的东西<br>请善用分类和标签进行检索<br><br></div>
+</div>
+  <div class="">
+    <a target="_blank" class="social-link" href="/atom.xml" style="color: #FC9A00;">
+      <span class="icon">
+        <i class="fa fa-rss"></i>
+      </span>
+      <span class="label">RSS</span>
+    </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/903508" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;903508" rel="noopener" target="_blank">Bilibili</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/3893250770" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;3893250770" rel="noopener" target="_blank">Weibo</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2022 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-leaf"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">望月木</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-tree"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">70k</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

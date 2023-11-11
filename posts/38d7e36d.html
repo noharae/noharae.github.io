@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><!-- hexo injector head_begin start -->
+<link rel="stylesheet" href="/css/bilicard.css">
+<!-- hexo injector head_begin end -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons8-flower-32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons8-flower-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons8-flower-16.png">
+  <link rel="mask-icon" href="/images/icons8-flower-32.png" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans SC:300,300italic,400,400italic,700,700italic|monospace:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"noharae.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+  <meta property="og:type" content="article">
+<meta property="og:title" content="少革剧场版脚本【C part】">
+<meta property="og:url" content="https://noharae.github.io/posts/38d7e36d.html">
+<meta property="og:site_name" content="野原">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-04-02T13:07:23.000Z">
+<meta property="article:modified_time" content="2023-05-07T14:18:04.000Z">
+<meta property="article:author" content="望月木">
+<meta property="article:tag" content="少女革命">
+<meta property="article:tag" content="翻译">
+<meta property="article:tag" content="榎户洋司">
+<meta property="article:tag" content="脚本翻译">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://noharae.github.io/posts/38d7e36d.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>少革剧场版脚本【C part】 | 野原</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="野原" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">野原</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-追番">
+
+    <a href="/bangumis/" rel="section"><i class="fa fa-tv fa-fw"></i>追番</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://noharae.github.io/posts/38d7e36d.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar-2.jpg">
+      <meta itemprop="name" content="望月木">
+      <meta itemprop="description" content="<br>望月木's blog<br>随意堆放些喜欢的东西<br>请善用分类和标签进行检索<br><br>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="野原">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          少革剧场版脚本【C part】
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-04-02 21:07:23" itemprop="dateCreated datePublished" datetime="2023-04-02T21:07:23+08:00">2023-04-02</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B0%91%E5%A5%B3%E9%9D%A9%E5%91%BD%E7%9B%B8%E5%85%B3%E5%BD%92%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">少女革命相关归档</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><center><font size="5">第3章</font></center>
+<center><font size="5">C part</font></center>
+
+<br>
+
+<p>○第二天・昼・美术室<br>美术老师「——那么，两人一组互相画对方的样子。不要只注重细节，重要的是把握对方的本质……今天天气很好，可以去室外画」<br>抱着素描本的同学们各自组成一对，走出教室。<br>环视周围的欧蒂娜。<br>欧蒂娜「啊，若叶……」<br>正想搭话，但若叶已经和其他男生（风见达也？）一起亲密地出去了。<br>回过神来，留在教室里的就只剩自己和安希了。<br>抱着素描本，露出微笑的安希。<br>欧蒂娜「……」</p>
+<p>○理事长馆・展望室<br>入内的安希。<br>安希「——来这边」<br>欧蒂娜「喂，没问题吗，到这种地方来……」<br>安希「反正不会有别人来的」<br>紧随安希，战战兢兢地爬楼梯的欧蒂娜。<br>但她在踏入展望室的那一刻，小声地欢呼了起来。<br>欧蒂娜「好棒的景色……」<br>从展望室四面敞开的窗户向外望去，凤凰市的街景一览无余。<br>两人的发丝随清风摇曳。<br>†<br>在长椅上面对面坐下，在打开的素描本上用铅笔涂画的两人。<br>欧蒂娜「（一边画）昨晚很抱歉……谢谢你」<br>安希「谢什么？」<br>欧蒂娜「……不要捉弄我了。总感觉是我在单方面的向你宣泄情绪，但是你为了我……」<br>安希「不用在意。因为你已经和我订婚了」<br>欧蒂娜「……我说啊，“订婚”什么的能别再提了吗？总之，我不会再参加决斗了」<br>欧蒂娜摘下戒指。<br>安希「果然你还是不喜欢我吗？」<br>欧蒂娜「并不是这样……怎么说呢，要想让关系变好的话，还是好好相处比较好吧？」<br>安希「……」<br>欧蒂娜「……昨晚，在那之后我回到房间，发现我虽然还是独自一人，心里却轻松了许多。感觉有些意外……互相倾诉烦恼，困扰的时候互相帮助，没想到我缺少的竟是这么单纯的东西，我觉得昨晚我就很坦率……」<br>安希「……」<br>欧蒂娜「可以的话，你也稍微对我敞开心扉如何？我想和你成为朋友……」<br>安希「……」<br>欧蒂娜「毕竟你从不提及关于自己的任何事情……蔷薇新娘的事情也好，不要再有奇怪的隐瞒了」<br>安希「……」<br>安希放下素描本，站起。<br>欧蒂娜「怎么了？」<br>安希好像在邀请欧蒂娜一般，走向展望室深处的房间。<br>在后头跟上的欧蒂娜。<br>†<br>深处的房间。<br>挂在房间里的是许多幅（艺术性但是姿态过激的）赤裸少女的肖像画。<br>欧蒂娜「这里是？」<br>安希「（模仿美术老师）“重要的是把握对方的本质”」<br>被画作包围，让欧蒂娜站起来的安希。<br>开始解欧蒂娜的制服纽扣。<br>欧蒂娜「（下意识退后）哇……等等，你在做什么」<br>安希「（微笑着，模仿欧蒂娜的语气）“不要再有奇怪的隐瞒了”」<br>欧蒂娜「……」<br>你看吧，将所有一切都坦诚布公是不可能的，面带微笑准备离开房间的安希。<br>欧蒂娜「我知道了……这样就行了吧」<br>欧蒂娜开始自己脱衣服。<br>看着她这一举动的安希的表情。<br>†<br>从望楼里，用观剧镜注视着这一幕的冬芽。<br>†<br>在画布上勾勒草图的安希。<br>她面前站着全裸的欧蒂娜。<br>欧蒂娜「喂，只有我当模特，这不公平吧」<br>安希「……（意味深长的眼神）」<br>安希也开始脱下自己的制服。<br>不知道眼睛该往哪放的欧蒂娜。<br>变得全裸的安希。<br>其胸口有着“伤痕”。<br>然后她摘下眼镜，散开头发，<br>欧蒂娜「！」<br>欧蒂娜终于有所察觉，环顾四周的画作。<br>周围所有的少女肖像画，都和变为素颜的安希酷似。<br>欧蒂娜「这些画的模特……是你吗？」<br>欧蒂娜重新看向周围的画。<br>安希「大家都想得到我，想得到蔷薇新娘的理由，就让我来告诉你吧」<br>如果这些画作所描绘的少女是安希，那或许揭露了某种可怕的事实。<br>想到这里，欧蒂娜露出受到冲击的表情。<br>欧蒂娜「怎么会这样……」</p>
+<p align="center"><a class="btn" href="38d7e36d">
+            <i class="fa fa-arrow-left fa-fw fa-lg"></i>D part
+          </a> <a class="btn" href="a5fb301b">
+            <i class="fa fa-arrow-right fa-fw fa-lg"></i>后记
+          </a></p>
+
+<p>○放送室<br>在电视上播放着“漫画电影<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="译注：即动画电影。在动画（アニメ）的叫法普及之前，常用“漫画映画”（漫画电影）指动画电影，“テレビまんが”（电视漫画）指电视动画。">[1]</span></a></sup>”。<br>E子「我得到了一条很厉害的独家新闻，听说在理事长室深处的房间里，挂着许多丑闻画，不管怎么说这都是个大问题」<br>F子「哎呀，我这边得到了更厉害的录像带哦，现在不是看这种“漫画电影”的时候了」<br>按下录像机开关的手指。<br>†<br>录像画面。<br>城堡耸立着。<br>在城堡前停下的晓生的跑车。<br>打开车门，向坐在助手席的香苗伸出手的晓生。<br>E子的声音「哎呀，这不是身为理事长代理的晓生先生吗。这是他和理事长千金订婚的时候吧」<br>F子的声音「他真像是从画里走出来的王子呢」<br>E子的声音「明明还很年轻就已经有所成就，人也温柔，而且容貌也很迷人」<br>晓生的特写。<br>他以“看向镜头”的姿势，<br>晓生「不不，您过奖了」<br>E子的声音「……这个，真的是录像带吗？」<br>†<br>独自开车的晓生。<br>窗外可以看见城堡。<br>（这卷录像带的画面看起来有些不自然，每一卡都能看见城堡）<br>†<br>抵达玄关的晓生，出来迎接的安希。<br>安希「欢迎回来，哥哥」<br>†<br>室内。<br>坐在起居室里的安希。<br>在她旁边，尚未完成的画布立在画架上。<br>在隔壁厨房里制作饮品的晓生。<br>E子的声音「没错，晓生先生还照顾着妹妹呢。真是相亲相爱的好兄妹啊」<br>F子的声音「但是丑闻就从这里开始了哦。令人吃惊的蔷薇新娘的秘密是……」<br>突然间，晓生脸上温柔的笑容消失了。<br>他往安希的杯子里投下了可疑的药片。<br>然后——</p>
+<p>○理事长馆展望室・深处的房间<br>在画作前愣住的欧蒂娜。<br>安希「这就是蔷薇新娘的秘密」<br>欧蒂娜「……」<br>——宣告决斗开始的钟声响起。</p>
+<p>○放学后・决斗广场<br>从安希胸口拔出剑的欧蒂娜的手。<br>她的手指上再次戴上了刚才摘下的蔷薇刻印。<br>巨大的夕阳。<br>被夕阳染成红色的两位决斗者的身姿。<br>树璃「哈！」<br>呐喊出声，用手中的剑发起猛攻的树璃。<br>猛烈的攻势。<br>但是，用迪奥斯之剑巧妙地避开剑锋的欧蒂娜，也是用剑好手。<br>†<br>学生会会议室・望楼。<br>用观剧镜注视着决斗的冬芽。<br>旁边干也在。<br>干「那个人真有一手啊」<br>冬芽「……」<br>†<br>剑与剑激烈地交锋。<br>树璃「我会告诉你，半吊子的王子游戏需要付出多少代价。你这种女孩，和蔷薇刻印并不相称！」<br>跳起来勉强避开树璃的剑，同时拉开距离的欧蒂娜。<br>树璃「只有剑术倒是值得赞赏」<br>欧蒂娜「我绝对不能输」<br>树璃「（坏心眼地）你就这么喜欢冬芽吗？」<br>欧蒂娜「哈（猛烈突刺的欧蒂娜）」<br>†<br>插入镜头・欧蒂娜的回忆。<br>赤裸相对的欧蒂娜和安希。<br>但是周围并不是室内，而是黑暗的空间。<br>然后，背景中，一座巨大的城堡矗立着。<br>安希「那是藏有永恒的城堡……」<br>欧蒂娜「……」<br>安希「虽然我也没有进去过，但只要进入其中就能得到一切……永恒、奇迹、光辉闪耀之物……就连你隐藏在内心深处的愿望也一定能够实现。得到我就意味着这些。即便如此，你还是想舍弃蔷薇刻印吗？」<br>†<br>相互碰撞的两人的剑。<br>两人的手指上都戴着蔷薇刻印。<br>激烈的攻防战持续着。<br>†<br>学生会会议室・望楼。<br>冬芽将观剧镜递给干，自己则朝房间外走去。<br>干「……你不看了吗？那个人是在为了你而战斗吧」<br>冬芽「谁知道呢……那又如何」<br>离开房间的冬芽。<br>只剩下干一个人，通过观剧镜看着决斗广场。<br>†<br>滚落地面的迪奥斯之剑。<br>发出金属音。<br>被逼至墙边的欧蒂娜。<br>树璃的剑尖对准她的胸前。<br>树璃「怎么了，王子游戏就到此为止了吗」<br>欧蒂娜「……」<br>抬眼一看，对面是蔷薇新娘姿态的安希。<br>在一瞬间对视的两人。<br>欧蒂娜「还没完！」<br>欧蒂娜朝着屋顶广场之外纵身一跃。<br>树璃「什么……」<br>安希「！」<br>看起来像是掉了下去，但却以校舍外墙浮雕的凸起处当踏脚石，像耍杂技一般跃起，与死亡擦肩而过的欧蒂娜。<br>吃惊的树璃。<br>欧蒂娜在树璃的背后着地。<br>同时捡起自己的剑。<br>欧蒂娜「哈！」<br>扑向树璃的欧蒂娜。<br>她的身影有一瞬间和王子的身影重叠。<br>插入镜头，对此感到惊讶的树璃、安希，以及干的表情。<br>和树璃的剑相交的欧蒂娜。<br>下个瞬间——<br>树璃胸前的蔷薇散落。<br>钟声响起。<br>树璃「……」<br>欧蒂娜看向安希。<br>对视的两人。<br>树璃「（对欧蒂娜）你的身影，刚才……」<br>就在这时——中庭传来喧闹声。<br>C子的声音「号外、号外、号外！」<br>欧蒂娜、安希、树璃，都往下看向传出声音的中庭。<br>†<br>中庭・蔷薇花坛。<br>教师和学生们聚集在花坛周围。<br>在丛丛盛放的蔷薇被残忍地翻掘之后。<br>滚落的铁锹。<br>然后——<br>在担架上，有一具盖着白布的遗体。<br>†<br>俯视着这一切的安希的表情。<br>†<br>紧紧抓住白布，放声痛哭的香苗。<br>香苗「晓生先生……晓生先生、晓生先生……」<br>可以听到背后传来闲言碎语。<br>A子「知道吗知道吗」<br>B子「大家知道吗」<br>C子「那是理事长吧」<br>B子「我还想着最近没见到他……」<br>A子「果然是被谁谋杀了吧？」<br>B子「毕竟他被人埋起来了嘛」<br>A子「但是，是谁干的呢？」<br>枝织的声音「是花坛的主人哦」<br>大家一同，看向枝织。<br>枝织「就是为了隐藏尸体，她才培育蔷薇的！看，这就是证据！」<br>然后她将（从放送室拿出的）录像带递给一名老师。</p>
+<p>○放送室<br>E子「咦……不见了，刚刚才看过的丑闻录像带不见了……」</p>
+<p>○决斗广场<br>俯视着中庭的欧蒂娜。<br>突然回过神，一看，刚才还在身边的安希的身影消失了。<br>欧蒂娜「！  姬宫……」<br>环视四周，但没有找到安希的身影。<br>欧蒂娜「（向四周呼喊）姬宫！」<br>欧蒂娜跑了出去。<br>目送其背影的树璃。<br>欧蒂娜的背影有一瞬间再次和王子的身影重叠。<br>树璃「王子……」<br>†<br>夕阳西沉。<br>夜幕降临。</p>
+<p>○校舍内・回廊<br>在像巨大教堂的内部一样空旷而昏暗的建筑物内，奔跑着的欧蒂娜。<br>她的表情。<br>欧蒂娜「……姬宫！」<br>†<br>插入镜头・录像画面。<br>躺在沙发上的全裸的安希。<br>抚摸其身体的晓生，突然察觉到什么，退开一步。<br>他狼狈的表情。<br>晓生「……你，没有睡着吗」<br>†<br>校舍内。<br>在走廊中央的十字路口停下，向着四周呼喊的欧蒂娜。<br>欧蒂娜「姬宫！  ……姬宫！」<br>†<br>插入镜头・录像画面。<br>睁开眼睛，反而露出一副抱歉的表情，看着地板的安希。<br>晓生「从什么时候开始，是从什么时候开始注意到的……（猛然一惊）你总是醒着的吗……只是在装睡而已吗」<br>安希「你不必在意……」<br>安希站起，靠近晓生。<br>安希「因为哥哥是我的王子……不论何时都可以，随你喜欢」<br>晓生「别说了，我不是那种人！」<br>晓生抓住油画刀。<br>†<br>校舍内。<br>在前方的一个转角，隐约瞥见好像是蔷薇新娘的衣装，但很快就消失不见。<br>欧蒂娜「姬宫！」<br>追过去的欧蒂娜。<br>†<br>插入镜头・录像画面。<br>握着油画刀，好像疯了一样挥舞着它的晓生。<br>晓生「——我是王子！」<br>安希「所以，我都说了随你喜欢就好」<br>晓生「你明白什么！」<br>安希「啊啊——」<br>油画刀刺伤了安希的胸口。<br>按住胸口蹲下的安希。<br>晓生「啊啊啊啊啊——」<br>晓生从窗口跳了出去。<br>看着这一切的安希的表情。<br>†<br>校舍内。<br>奔跑着的欧蒂娜。<br>但是飞奔到转角处之后，发现那里是无人的十字路口。<br>只有并排的椅子，和手指形的路线指示。<br>那“指尖”指向走廊更深处。<br>墙上贴着卡片。</p>
+<blockquote>
+<p>致婚约者<br>我在深处等你</p>
+</blockquote>
+<p>欧蒂娜向昏暗的走廊深处前进。<br>†<br>不久之后，跟随指示的欧蒂娜到达了像忏悔室一样的小房间。<br>背后的门自动关上了。<br>冬芽的声音「你的年级和名字是？」<br>看来，暗色磨砂玻璃的另一侧是冬芽。<br>从小窗望去，只能窥见他的手。<br>欧蒂娜有些疑惑，但还是在椅子上坐下。<br>欧蒂娜「初中二年级，A班，天上欧蒂娜」<br>哐……哐……低沉的震动音，从墙的另一侧响起。<br>房间像电梯一样下降。<br>并未察觉这异常情况的两人。<br>†<br>插入镜头。<br>沿着螺旋楼梯向下走的王子的身影。<br>†<br>欧蒂娜「我终于想起来了」<br>冬芽「什么？」<br>欧蒂娜「和你分别时的事……你不在了的那时的事，来到这里之后，我为什么忘记了呢……那时，在我们学校附近的河里，有个男孩淹死了」<br>冬芽「……有过这种事吗」<br>欧蒂娜「有的。有个乘在小船上的女孩掉进了河里。然后，有个男孩为了救她而跳进河里，虽然救下了她，但自己却被河水冲走了」<br>冬芽「……」<br>欧蒂娜「为什么至今为止，我都忘记了呢」<br>冬芽「欧蒂娜，你不和我一起来吗？我现在就在这里。我一直想着你。直到世界的尽头，我发誓我会一直爱着你。这样不好吗。留在这里幸福地活下去吧」<br>欧蒂娜「（轻轻微笑）那时你也这么说过。那天晚上，我独自在礼拜堂哭泣的时候……你也说过“我一直想着你”」<br>冬芽「……」<br>欧蒂娜「谢谢……你真的曾是我的王子」<br>冬芽「……」<br>欧蒂娜「在这学园里进行的决斗游戏，到底有什么意义？」<br>冬芽「……这里的所有一切都是以王子为中心而构成的。然而唯独没有活生生的王子。所以为了填补那个空白，决斗游戏是必要的」<br>欧蒂娜「姬宫在哪？」<br>冬芽「你为什么想见她？果然你也想要能够引发奇迹的力量吗？」<br>欧蒂娜「那种力量真的存在吗」<br>†<br>插入镜头・录像画面。<br>躺在挖好的坑中的晓生的尸体，以及伫立在一旁的安希。<br>画面重叠——<br>晓生的尸体化为蔷薇花坛，安希则化为蔷薇新娘的姿态。<br>与此同时，空中出现城堡。<br>冬芽的声音「在她成为蔷薇新娘的同时，那座藏有永恒的城堡也出现了，没错，就在她杀了身为王子的兄长之时」<br>†<br>欧蒂娜「不，王子从一开始就已经死了」<br>哐……哐……电梯下降的声音持续着。<br>欧蒂娜「而且，其实你也已经死了吧」<br>冬芽「……」<br>哐，电梯着地的声音在这时响起。<br>房间停止下降。<br>与此同时，隔开两人的玻璃消失了。<br>†<br>从螺旋阶梯上走下来的王子，打开了一扇大门。<br>其中是，欧蒂娜和冬芽所在的告白升降室。<br>两人双唇重合。<br>是欧蒂娜强吻过去的，但她又主动放开了。透过刚才打开的墙壁，她抬头望向空中。<br>在那里的是，延伸至夜空中的螺旋阶梯。星空中挂着彩虹。<br>欧蒂娜「姬宫就在那上面吗？」<br>冬芽「……没错」<br>冬芽的蔷薇刻印染上了黑色。<br>欧蒂娜「……你的戒指是怎么回事？」<br>冬芽「当持有者死去，蔷薇刻印就会染成黑色」<br>欧蒂娜「我以前真的很喜欢你。即便到了现在，这份心情也没有改变。但是……」<br>欧蒂娜毅然决然地转身背对冬芽，抬头看向螺旋阶梯。<br>沿着阶梯向上攀登的欧蒂娜。<br>她身后的门关上了。</p>
+<p align="center"><a class="btn" href="dc663469">
+            <i class="fa fa-arrow-left fa-fw fa-lg"></i>B part
+          </a> <a class="btn" href="201c96f7">
+            <i class="fa fa-arrow-right fa-fw fa-lg"></i>D part
+          </a></p>
+
+
+
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">译注：即动画电影。在动画（アニメ）的叫法普及之前，常用“漫画映画”（漫画电影）指动画电影，“テレビまんが”（电视漫画）指电视动画。<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%B0%91%E5%A5%B3%E9%9D%A9%E5%91%BD/" rel="tag"># 少女革命</a>
+              <a href="/tags/%E7%BF%BB%E8%AF%91/" rel="tag"># 翻译</a>
+              <a href="/tags/%E6%A6%8E%E6%88%B7%E6%B4%8B%E5%8F%B8/" rel="tag"># 榎户洋司</a>
+              <a href="/tags/%E8%84%9A%E6%9C%AC%E7%BF%BB%E8%AF%91/" rel="tag"># 脚本翻译</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/349100e3.html" rel="prev" title="潘多拉之心15周年纪念册 部分翻译">
+      <i class="fa fa-chevron-left"></i> 潘多拉之心15周年纪念册 部分翻译
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/bbb6a90d.html" rel="next" title="blog用 语法整理">
+      blog用 语法整理 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="望月木"
+      src="/uploads/avatar-2.jpg">
+  <p class="site-author-name" itemprop="name">望月木</p>
+  <div class="site-description" itemprop="description"><br>望月木's blog<br>随意堆放些喜欢的东西<br>请善用分类和标签进行检索<br><br></div>
+</div>
+  <div class="">
+    <a target="_blank" class="social-link" href="/atom.xml" style="color: #FC9A00;">
+      <span class="icon">
+        <i class="fa fa-rss"></i>
+      </span>
+      <span class="label">RSS</span>
+    </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/903508" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;903508" rel="noopener" target="_blank">Bilibili</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/3893250770" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;3893250770" rel="noopener" target="_blank">Weibo</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2022 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-leaf"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">望月木</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-tree"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">70k</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
