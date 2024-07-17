@@ -144,6 +144,51 @@
       </tags>
   </entry>
   <entry>
+    <title>用kindle阅读日文相关物</title>
+    <url>/posts/d4569923.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>以前只用kindle看看漫画读读小说，然而最近有一些读同人本的需求<span style="background:#555555;">（麻里央太太的同人文写得好长好美妙然而用电脑看得累死我了）</span>，并且kindle也已经支持epub了……再也不用折腾做成mobi了，正好重新整理一下。</p>
+<hr>
+<h3 id="文字类"><a href="#文字类" class="headerlink" title="文字类"></a>文字类</h3><h4 id="日文书籍-小说资源获取"><a href="#日文书籍-小说资源获取" class="headerlink" title="日文书籍&#x2F;小说资源获取"></a>日文书籍&#x2F;小说资源获取</h4><ol>
+<li><p>现成的书籍资源：Z-Library  |  <a href="https://itazuraneko.neocities.org/library/shousetu.html">itazuraneko</a></p>
+</li>
+<li><p>未经处理的txt资源：<a href="https://nyaa.si/">nyaa</a>  |  <a href="https://www.aozora.gr.jp/">青空文库</a></p>
+</li>
+</ol>
+<p>其中青空文库可在网站中直接下载zip(txt)，图省事也可以直接在 <a href="http://www.netbuffalo.net/NetApps/kindle/aozora">MOBIぞら文庫</a> 下载mobi文件。</p>
+<h4 id="txt→epub"><a href="#txt→epub" class="headerlink" title="txt→epub"></a>txt→epub</h4><p>方法多样，任选其一即可：</p>
+<ol>
+<li><p><del>在 <a href="http://a2k.aill.org/">青空キンドル </a> 输入青空文库的zip链接，转换为竖排pdf。</del>（已失效）</p>
+</li>
+<li><p>使用 <a href="http://ebook.cdict.info/mobi/">天火藏書</a> 的网页端制作epub&#x2F;mobi文件。非常无脑简单，上传即可，但可能存在假名注音显示不全的问题。不在乎注音问题可以使用。</p>
+</li>
+<li><p><u><strong>AozoraEpub</strong></u>（推荐★），使用步骤如下：</p>
+<p>① 首先检查是否乱码，若乱码则通过 <u><strong>codeTransmit</strong></u> 等软件，把文本转换成<strong>UTF-8编码</strong>，得到正常显示的日文文本。</p>
+<p>② 用软件打开正常显示的文本（<strong>UTF-8编码</strong>）。<br><img src="/posts/d4569923/1.png" alt="1"></p>
+<p>③ 若文档格式正确则会出现完整的书名、作者封面和目录。确认即可。<br><img src="/posts/d4569923/2.png" alt="2"></p>
+<p>④ 可使用 <u><strong>kindlestrip</strong></u> 去冗余（注意文件名和目录不要有中文）：将文件放入temp文件夹后，点击auto.bat，运行完后在result文件夹找到去冗余后的文件，mobi文件的体积在去冗余后会大大缩小。</p>
+</li>
+</ol>
+<hr>
+<h3 id="图片类"><a href="#图片类" class="headerlink" title="图片类"></a>图片类</h3><h4 id="漫画-小说扫图资源获取"><a href="#漫画-小说扫图资源获取" class="headerlink" title="漫画&#x2F;小说扫图资源获取"></a>漫画&#x2F;小说扫图资源获取</h4><p>有许多小说并没有txt版本，但可以找到扫图，主要获取渠道和漫画一样：<a href="https://nyaa.si/">nyaa</a>  |  <a href="http://13dl.net/">13dl</a>  |  <a href="https://dlraw.net/raw/">dlraw</a></p>
+<p>同人文&#x2F;本的获取当然就是p站啊各种论坛啊balabala……</p>
+<p>当然直接通过 <a href="https://booth.pm/zh-cn">booth</a> 和 <a href="https://www.dlsite.com/index.html">dlsite</a> 购买电子版最好，得到pdf后直接发送至kindle即可。</p>
+<h4 id="jpg-png→epub"><a href="#jpg-png→epub" class="headerlink" title="jpg&#x2F;png→epub"></a>jpg&#x2F;png→epub</h4><p>使用 <u><strong>ChainLP</strong></u> 打包图片，使用方法可以参照 <a href="https://tieba.baidu.com/p/2191868417">[超详细教程] MOBI全屏漫画&#x2F;图片书籍</a> 此帖，得到的mobi文件同样可使用 <u><strong>kindlestrip</strong></u> 去冗余。</p>
+<hr>
+<h3 id="PDF类"><a href="#PDF类" class="headerlink" title="PDF类"></a>PDF类</h3><p>pdf往往存在文件过大，无法用邮箱传送的问题，首先可以用 <a href="https://www.ilovepdf.com/compress_pdf">ilovepdf</a> 等方式压缩文件。</p>
+<p>如果内容比较难以阅读，则需要进一步处理，参考：<a href="https://bookfere.com/post/134.html">PDF 重排工具：K2pdfopt 简明教程</a></p>
+<p>然而很久都没遇到这种难以处理的pdf文件……没有实际用过，以后用过再来补充好了……</p>
+<hr>
+<h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><p>其它格式的使用频率相对不高，大部分应该都可以使用 <u><strong>calibre</strong></u> 转换。</p>
+]]></content>
+      <categories>
+        <category>杂货堆</category>
+      </categories>
+      <tags>
+        <tag>折腾</tag>
+        <tag>kindle</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>对少革游戏的吐槽</title>
     <url>/posts/5d366c56.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note danger">
@@ -259,7 +304,7 @@
 <h3 id="OVER"><a href="#OVER" class="headerlink" title="OVER"></a>OVER</h3><p>最后，游戏里竟然并没有凤晓生汽车人，感觉被骗了o(￣ヘ￣o＃)<br>不过算了，反正这整个游戏还挺好笑的w<br>这居然是大河内写出来的……</p>
 ]]></content>
       <categories>
-        <category>杂货堆</category>
+        <category>随便写写</category>
       </categories>
       <tags>
         <tag>少女革命</tag>
@@ -982,51 +1027,6 @@
         <tag>少女革命</tag>
         <tag>翻译</tag>
         <tag>歌词翻译</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>用kindle阅读日文相关物</title>
-    <url>/posts/d4569923.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>以前只用kindle看看漫画读读小说，然而最近有一些读同人本的需求<span style="background:#555555;">（麻里央太太的同人文写得好长好美妙然而用电脑看得累死我了）</span>，并且kindle也已经支持epub了……再也不用折腾做成mobi了，正好重新整理一下。</p>
-<hr>
-<h3 id="文字类"><a href="#文字类" class="headerlink" title="文字类"></a>文字类</h3><h4 id="日文书籍-小说资源获取"><a href="#日文书籍-小说资源获取" class="headerlink" title="日文书籍&#x2F;小说资源获取"></a>日文书籍&#x2F;小说资源获取</h4><ol>
-<li><p>现成的书籍资源：Z-Library  |  <a href="https://itazuraneko.neocities.org/library/shousetu.html">itazuraneko</a></p>
-</li>
-<li><p>未经处理的txt资源：<a href="https://nyaa.si/">nyaa</a>  |  <a href="https://www.aozora.gr.jp/">青空文库</a></p>
-</li>
-</ol>
-<p>其中青空文库可在网站中直接下载zip(txt)，图省事也可以直接在 <a href="http://www.netbuffalo.net/NetApps/kindle/aozora">MOBIぞら文庫</a> 下载mobi文件。</p>
-<h4 id="txt→epub"><a href="#txt→epub" class="headerlink" title="txt→epub"></a>txt→epub</h4><p>方法多样，任选其一即可：</p>
-<ol>
-<li><p><del>在 <a href="http://a2k.aill.org/">青空キンドル </a> 输入青空文库的zip链接，转换为竖排pdf。</del>（已失效）</p>
-</li>
-<li><p>使用 <a href="http://ebook.cdict.info/mobi/">天火藏書</a> 的网页端制作epub&#x2F;mobi文件。非常无脑简单，上传即可，但可能存在假名注音显示不全的问题。不在乎注音问题可以使用。</p>
-</li>
-<li><p><u><strong>AozoraEpub</strong></u>（推荐★），使用步骤如下：</p>
-<p>① 首先检查是否乱码，若乱码则通过 <u><strong>codeTransmit</strong></u> 等软件，把文本转换成<strong>UTF-8编码</strong>，得到正常显示的日文文本。</p>
-<p>② 用软件打开正常显示的文本（<strong>UTF-8编码</strong>）。<br><img src="/posts/d4569923/1.png" alt="1"></p>
-<p>③ 若文档格式正确则会出现完整的书名、作者封面和目录。确认即可。<br><img src="/posts/d4569923/2.png" alt="2"></p>
-<p>④ 可使用 <u><strong>kindlestrip</strong></u> 去冗余（注意文件名和目录不要有中文）：将文件放入temp文件夹后，点击auto.bat，运行完后在result文件夹找到去冗余后的文件，mobi文件的体积在去冗余后会大大缩小。</p>
-</li>
-</ol>
-<hr>
-<h3 id="图片类"><a href="#图片类" class="headerlink" title="图片类"></a>图片类</h3><h4 id="漫画-小说扫图资源获取"><a href="#漫画-小说扫图资源获取" class="headerlink" title="漫画&#x2F;小说扫图资源获取"></a>漫画&#x2F;小说扫图资源获取</h4><p>有许多小说并没有txt版本，但可以找到扫图，主要获取渠道和漫画一样：<a href="https://nyaa.si/">nyaa</a>  |  <a href="http://13dl.net/">13dl</a>  |  <a href="https://dlraw.net/raw/">dlraw</a></p>
-<p>同人文&#x2F;本的获取当然就是p站啊各种论坛啊balabala……</p>
-<p>当然直接通过 <a href="https://booth.pm/zh-cn">booth</a> 和 <a href="https://www.dlsite.com/index.html">dlsite</a> 购买电子版最好，得到pdf后直接发送至kindle即可。</p>
-<h4 id="jpg-png→epub"><a href="#jpg-png→epub" class="headerlink" title="jpg&#x2F;png→epub"></a>jpg&#x2F;png→epub</h4><p>使用 <u><strong>ChainLP</strong></u> 打包图片，使用方法可以参照 <a href="https://tieba.baidu.com/p/2191868417">[超详细教程] MOBI全屏漫画&#x2F;图片书籍</a> 此帖，得到的mobi文件同样可使用 <u><strong>kindlestrip</strong></u> 去冗余。</p>
-<hr>
-<h3 id="PDF类"><a href="#PDF类" class="headerlink" title="PDF类"></a>PDF类</h3><p>pdf往往存在文件过大，无法用邮箱传送的问题，首先可以用 <a href="https://www.ilovepdf.com/compress_pdf">ilovepdf</a> 等方式压缩文件。</p>
-<p>如果内容比较难以阅读，则需要进一步处理，参考：<a href="https://bookfere.com/post/134.html">PDF 重排工具：K2pdfopt 简明教程</a></p>
-<p>然而很久都没遇到这种难以处理的pdf文件……没有实际用过，以后用过再来补充好了……</p>
-<hr>
-<h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><p>其它格式的使用频率相对不高，大部分应该都可以使用 <u><strong>calibre</strong></u> 转换。</p>
-]]></content>
-      <categories>
-        <category>杂货堆</category>
-      </categories>
-      <tags>
-        <tag>折腾</tag>
-        <tag>kindle</tag>
       </tags>
   </entry>
   <entry>
@@ -1960,6 +1960,24 @@
       </tags>
   </entry>
   <entry>
+    <title>少革tv副音轨（几原邦彦×斋藤千穗）</title>
+    <url>/posts/553ac501.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>渣翻。b站可以直接观看，但是由于版权问题，画面只能放ppt。想本地看的可以下载外挂字幕。</p>
+<h3 id="在线观看"><a href="#在线观看" class="headerlink" title="在线观看"></a>在线观看</h3><p><a href="https://www.bilibili.com/video/BV18e4y1R7VS">37话</a>  |  <a href="https://www.bilibili.com/video/BV13d4y1P7RT">38话</a>  |  <a href="https://www.bilibili.com/video/BV1Mg411m7Ni">39话</a></p>
+<h3 id="外挂字幕"><a href="#外挂字幕" class="headerlink" title="外挂字幕"></a>外挂字幕</h3><p><a href="https://pan.baidu.com/s/108brmIsmO3XTZX3cB2uOUw">度盘链接</a>（提取码: 8vie）</p>
+]]></content>
+      <categories>
+        <category>少女革命相关归档</category>
+      </categories>
+      <tags>
+        <tag>少女革命</tag>
+        <tag>翻译</tag>
+        <tag>访谈翻译</tag>
+        <tag>几原邦彦</tag>
+        <tag>斋藤千穗</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>少革各话staff整理</title>
     <url>/posts/6cb056e4.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note info">
@@ -2364,67 +2382,6 @@
       </tags>
   </entry>
   <entry>
-    <title>少革tv副音轨（几原邦彦×斋藤千穗）</title>
-    <url>/posts/553ac501.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>渣翻。b站可以直接观看，但是由于版权问题，画面只能放ppt。想本地看的可以下载外挂字幕。</p>
-<h3 id="在线观看"><a href="#在线观看" class="headerlink" title="在线观看"></a>在线观看</h3><p><a href="https://www.bilibili.com/video/BV18e4y1R7VS">37话</a>  |  <a href="https://www.bilibili.com/video/BV13d4y1P7RT">38话</a>  |  <a href="https://www.bilibili.com/video/BV1Mg411m7Ni">39话</a></p>
-<h3 id="外挂字幕"><a href="#外挂字幕" class="headerlink" title="外挂字幕"></a>外挂字幕</h3><p><a href="https://pan.baidu.com/s/108brmIsmO3XTZX3cB2uOUw">度盘链接</a>（提取码: 8vie）</p>
-]]></content>
-      <categories>
-        <category>少女革命相关归档</category>
-      </categories>
-      <tags>
-        <tag>少女革命</tag>
-        <tag>翻译</tag>
-        <tag>访谈翻译</tag>
-        <tag>几原邦彦</tag>
-        <tag>斋藤千穗</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Aegisub 使用笔记</title>
-    <url>/posts/d9ea43c5.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><ol>
-<li><p>随便找几个教程瞄一眼：<a href="https://www.bilibili.com/video/BV1Kx411z7My">新手入门Aegisub教程以及压制相关</a> | <a href="https://www.bilibili.com/video/BV1ps411b7as">快速打轴法</a> | <a href="https://sspai.com/post/47557">Aegisub 的使用指南及技巧</a></p>
-</li>
-<li><p>记下基本操作：左键设置开始时间，右键设置结束时间（ctrl+滚轮可以缩放频谱）</p>
-<blockquote>
-<p>S键 &#x2F; Space：播放当前行<br>G键：提交修改并进入下一行<br>Z键：返回上一行</p>
-<p>Q键：播放选区之前500ms<br>D键：播放选区最后500ms<br>W键：播放选区之后500ms</p>
-<p>F键：音轨向后移动<br>A键：音轨向前移动</p>
-</blockquote>
-<p>以上基本就能满足简单的打轴需求了……！</p>
-</li>
-</ol>
-<hr>
-<h3 id="遇到的问题记录"><a href="#遇到的问题记录" class="headerlink" title="遇到的问题记录"></a>遇到的问题记录</h3><ol>
-<li><p>根据说话人来批量替换样式：字幕&gt;选择多行，根据需求选中后批量替换样式即可</p>
-</li>
-<li><p>对齐文本<br>左上角  <code>&#123;\an7&#125;</code>     中上方  <code>&#123;\an8&#125;</code>     右上角  <code>&#123;\an9&#125;</code><br>左下角  <code>&#123;\an1&#125;</code>     其他同理，换换数字就行</p>
-</li>
-<li><p>做竖排字幕：使用开头带@的字体，同时在字幕编辑框里输入 <code>&#123;\frz-90&#125;</code>+内容</p>
-</li>
-<li><p>给文本加简单的半透明边框：在编辑框输入■，调整透明度，去掉边框和阴影，然后用 <code>\fscx</code> 和 <code>\fscy</code> 实现加长和加宽， 比如：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;\fscx4000\fscy220\pos(972,1022)&#125;■</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>还有其它比较高级的方法但我一时没弄懂，暂时偷懒用这个粗糙的法子，以后有需求再琢磨（）</p>
-<!--
-
-或者
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;\fscx4000\fscy170\pos(952,926)&#125;■</span><br></pre></td></tr></table></figure>
-
-<p>–&gt;</p>
--->]]></content>
-      <categories>
-        <category>杂货堆</category>
-      </categories>
-      <tags>
-        <tag>视频与字幕制作</tag>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>「青春期的另一侧」川上伦子×几原邦彦对谈（节选）</title>
     <url>/posts/e217a44e.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>——川上小姐被选为主角的欧蒂娜役，她和角色有相似的地方吗？<br>几原：她和欧蒂娜完全不像呢。<br>川上：虽然几乎没有相似之处，但有一点是相似的……笨蛋又老实的部分非常相似。至于其它的部分，我不会想着夸大自己，而是和欧蒂娜这一角色一起摸索着演出。<br>——几原监督觉得川上小姐作为声优的魅力是什么？<br>几原：刚才，虽然她说笨蛋又老实的部分和欧蒂娜很相似，但我要纠正一点，与其说是笨蛋又老实，不如说是笨蛋的部分很有魅力。<br>川上：给我等等——。“魅力是？”既然问到这种问题了，那就该夸夸我才对吧。<br>几原：魅力……果然还是笨蛋的部分啊（笑）。对工作专心致志这点就很好。也没有让人讨厌的地方。<br>川上：再多说一些——比如说声音很好听之类的。<br>几原：啊，声音很好听呢（笑）。<br>川上：啊——好刻意！</p>
@@ -2495,6 +2452,49 @@
       </tags>
   </entry>
   <entry>
+    <title>Aegisub 使用笔记</title>
+    <url>/posts/d9ea43c5.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><ol>
+<li><p>随便找几个教程瞄一眼：<a href="https://www.bilibili.com/video/BV1Kx411z7My">新手入门Aegisub教程以及压制相关</a> | <a href="https://www.bilibili.com/video/BV1ps411b7as">快速打轴法</a> | <a href="https://sspai.com/post/47557">Aegisub 的使用指南及技巧</a></p>
+</li>
+<li><p>记下基本操作：左键设置开始时间，右键设置结束时间（ctrl+滚轮可以缩放频谱）</p>
+<blockquote>
+<p>S键 &#x2F; Space：播放当前行<br>G键：提交修改并进入下一行<br>Z键：返回上一行</p>
+<p>Q键：播放选区之前500ms<br>D键：播放选区最后500ms<br>W键：播放选区之后500ms</p>
+<p>F键：音轨向后移动<br>A键：音轨向前移动</p>
+</blockquote>
+<p>以上基本就能满足简单的打轴需求了……！</p>
+</li>
+</ol>
+<hr>
+<h3 id="遇到的问题记录"><a href="#遇到的问题记录" class="headerlink" title="遇到的问题记录"></a>遇到的问题记录</h3><ol>
+<li><p>根据说话人来批量替换样式：字幕&gt;选择多行，根据需求选中后批量替换样式即可</p>
+</li>
+<li><p>对齐文本<br>左上角  <code>&#123;\an7&#125;</code>     中上方  <code>&#123;\an8&#125;</code>     右上角  <code>&#123;\an9&#125;</code><br>左下角  <code>&#123;\an1&#125;</code>     其他同理，换换数字就行</p>
+</li>
+<li><p>做竖排字幕：使用开头带@的字体，同时在字幕编辑框里输入 <code>&#123;\frz-90&#125;</code>+内容</p>
+</li>
+<li><p>给文本加简单的半透明边框：在编辑框输入■，调整透明度，去掉边框和阴影，然后用 <code>\fscx</code> 和 <code>\fscy</code> 实现加长和加宽， 比如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;\fscx4000\fscy220\pos(972,1022)&#125;■</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>还有其它比较高级的方法但我一时没弄懂，暂时偷懒用这个粗糙的法子，以后有需求再琢磨（）</p>
+<!--
+
+或者
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;\fscx4000\fscy170\pos(952,926)&#125;■</span><br></pre></td></tr></table></figure>
+
+<p>–&gt;</p>
+-->]]></content>
+      <categories>
+        <category>杂货堆</category>
+      </categories>
+      <tags>
+        <tag>视频与字幕制作</tag>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>22年的精神食粮 🔒</title>
     <url>/posts/a429673f.html</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -2510,7 +2510,7 @@
 </div>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
-        <category>杂货堆</category>
+        <category>随便写写</category>
       </categories>
       <tags>
         <tag>总结</tag>
@@ -2715,27 +2715,6 @@
       </tags>
   </entry>
   <entry>
-    <title>潘多拉之心15周年纪念册 部分翻译</title>
-    <url>/posts/349100e3.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="奥兹"><a href="#奥兹" class="headerlink" title="奥兹"></a>奥兹</h4><p>如果被问到“用一句话来概括潘多拉之心的话是怎样的故事？”，我会回答是“奥兹探寻自我的故事”。初次长期连载有许多力不从心的地方，尽管有许多不能尽数描绘之处，但只有奥兹的故事，无论如何我都想好好画完。我想只要做到这一点，至少在我心中，“潘多拉之心”就是一部成功的作品。9年间，我一直拼命去理解奥兹这一角色，为他加油，与他并肩奔跑。看到最终话中奥兹的身影，感觉他好像已经领先我一步了，我有些寂寞。但是从今往后，为了不让他感到失望，我也想要好好面对自己的作品。</p>
-<h4 id="爱丽丝"><a href="#爱丽丝" class="headerlink" title="爱丽丝"></a>爱丽丝</h4><p>本作的男主角。比谁都更有男子气概。由于太有男子气概了以至于“为已经下过结论的事情再次烦恼实在不像是爱丽丝的作风”，于是5卷之后难以再将她作为焦点中心来描绘。抱歉啊爱丽丝。总之……在男性角色们的精神相当不稳定的本作中，不论何时都很稳定的爱丽丝是难得的存在。直到故事中盘为止，她和基尔之间恶劣的关系很令人怀念，但爱丽丝只是对针对自己的恶意很敏感而已，在基尔接受了她之后关系马上就变好了。我很喜欢描绘这两个人之间的互动。</p>
-<h4 id="基尔巴特"><a href="#基尔巴特" class="headerlink" title="基尔巴特"></a>基尔巴特</h4><p>本作的女主角。在描绘他软弱一面的时候，我也经常在想着“你够了啦~~~！”的同时感到十分焦急。但是19卷之后的基尔很有活力真是太好了呢。我觉得20卷中说着“你有什么不满吗奥兹！”那一格的基尔，是我画的最帅的基尔。原本的基尔是感情激烈、关心弟弟，非常坦率的人。虽然最终话中基尔“我能理解但是不能接受！！”的台词在画草图时很自然地就从笔下流出，但在当时在场全员都明白“这就是最好的选择”的情况下，仍然说出“就算这样我也不要！”这种任性话的基尔让作者本人感到被拯救了。</p>
-<h4 id="文森特"><a href="#文森特" class="headerlink" title="文森特"></a>文森特</h4><p>我觉得文森特是最初和最终印象有了很大变化的角色。在最初的大纲中，布雷克对他说“无论你如何渴望过去，那里都没有你的未来啊！！”，他以此为契机得到了救赎……虽然有过这种构想，但实际描绘的时候我发现“光凭那种话就得能到救赎的话，那他也不会变得这么扭曲了吧”……。他所寻求之物虽是“宽恕”，但哪怕是稍微和萨布利耶的悲剧有一点关系的人这么说的话，我总觉得他的反应会是“不想听你这么说”。能给他“那个”的只有艾达，最终我得出了这种结论。艾达真的是很努力了。</p>
-<h4 id="艾歌"><a href="#艾歌" class="headerlink" title="艾歌"></a>艾歌</h4><p>“艾歌最精彩的一幕就是将自己称为‘我’的时候”这是从一开始就已经定好了的，在23卷终于画到这一幕的时候感慨颇深。我在创作97话的时候，一直边听Kalafina的《misterioso》边画，最后的副歌前有一瞬间音符被拉长……我擅自妄想着“艾歌在这时抬头，帅气地说出‘「我」要！’”，情绪高涨起来。由于收录话数的偏差，虽然比本篇出得更早，但是22卷的封面上奥兹披着的是艾歌（诺伊兹）的斗篷。</p>
-<h4 id="埃利奥特"><a href="#埃利奥特" class="headerlink" title="埃利奥特"></a>埃利奥特</h4><p>明明生在那个奈特雷伊家，真亏埃利奥特能长成这么正直的人……我不由得这么想。这其中绝对是有理由的，要追根究底的话，“最小的孩子这么可爱，哥哥姐姐们无奈只好让他远离肮脏的事物”当然也是其中一个原因，但我觉得最重要的是基尔和文斯的存在。就像24+1卷中所描绘的那样，文斯给予了埃利奥特与以往完全不同的价值观，这样成长起来的埃利奥特成为了里奥的光，而里奥又成为了文森特的希望……。我想描绘出这种“感情”的循环。有好好描绘出来真是太好了。</p>
-<h4 id="里奥"><a href="#里奥" class="headerlink" title="里奥"></a>里奥</h4><p>其实里奥在试读版《潘多拉之心》中就已经存在了。看似悠然自得，实际上非常性急。虽然对主人的态度很随意，但比谁都更重视他。我觉得他不是那种容易理解的常规角色，但描绘起来竟然也没有那么困难，反而越画越有味道，对作者来说也是很奇妙的角色。他和奥兹、埃利奥特3个人在一起时的平衡感真是绝妙，真想再多画些这3个人之间的互动。文森特和里奥的主从关系也是，原本的立场逆转，各方面都颠倒过来，描绘这些很有意思。让文斯打开了新大门（M）的里奥真是厉害啊。</p>
-<h4 id="夏萝"><a href="#夏萝" class="headerlink" title="夏萝"></a>夏萝</h4><p>首先我想对夏萝道歉“反复拿出场戏份太少来玩梗真是抱歉……”。真是抱歉啊……。这次为了挑选用来展示的画而重看了一遍单行本，但是看着12卷中夏萝说出“我确实失去了一些东西……但从这种丧失之中能够获得什么，就完全取决于我自己了”的这一幕，“我……竟然写了这种台词吗。干得不错嘛”，有些想表扬过去的自己了。这里说的“干得不错嘛”，不是指“过去的我写了不错的台词”，而是“我好好理解了夏萝的坚强之处并将其写入台词中”的意思。她是位很坚强的女性。</p>
-<h4 id="布雷克"><a href="#布雷克" class="headerlink" title="布雷克"></a>布雷克</h4><p>布雷克是按照“自己作为主角的故事已经完结了的角色”这种感觉来描绘的。所以，我原本觉得他自身不太有成长的余地，但却在描绘的过程中逐渐看见他的人性（主要是糟糕的方面），我终于察觉到“啊啊，这个人还能继续‘改变’的”。向夏萝坦白自己已经失去视力、寻求基尔巴特的帮助、得知雷姆还活着后露出丢人的表情、——最后的最后想着“不想死”。布雷克可能会觉得那些都是他的弱点，露出一脸复杂的表情，但是我觉得有描绘出他的“改变”真是太好了。</p>
-<h4 id="雷姆"><a href="#雷姆" class="headerlink" title="雷姆"></a>雷姆</h4><p>我以前好像也有在哪里写过，基尔是为了“私”而舍弃“公”的人，而雷姆则是为了“公”而舍弃“私”的人。冷静地把握局势，支援周围的人，必要时甚至会做出冷酷的判断。根据本人的性格来看，虽然我觉得可能会很困难，但在故事终盘，比起“公”，他更优先选择了“私”，奔向重要的两人身边，我打从心底松了一口气。“要怎么样才能让雷姆主动离开他的岗位（女公爵身边）呢？”我曾对这一难题感到头疼。他过于优秀以致于有些可怕，但是如果成为同伴的话，比谁都更让人安心。</p>
-]]></content>
-      <categories>
-        <category>其它归档</category>
-      </categories>
-      <tags>
-        <tag>PandoraHearts</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>blog用 语法整理</title>
     <url>/posts/bbb6a90d.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note defult">
@@ -2876,6 +2855,27 @@ password:
       <tags>
         <tag>blog</tag>
         <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>潘多拉之心15周年纪念册 部分翻译</title>
+    <url>/posts/349100e3.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="奥兹"><a href="#奥兹" class="headerlink" title="奥兹"></a>奥兹</h4><p>如果被问到“用一句话来概括潘多拉之心的话是怎样的故事？”，我会回答是“奥兹探寻自我的故事”。初次长期连载有许多力不从心的地方，尽管有许多不能尽数描绘之处，但只有奥兹的故事，无论如何我都想好好画完。我想只要做到这一点，至少在我心中，“潘多拉之心”就是一部成功的作品。9年间，我一直拼命去理解奥兹这一角色，为他加油，与他并肩奔跑。看到最终话中奥兹的身影，感觉他好像已经领先我一步了，我有些寂寞。但是从今往后，为了不让他感到失望，我也想要好好面对自己的作品。</p>
+<h4 id="爱丽丝"><a href="#爱丽丝" class="headerlink" title="爱丽丝"></a>爱丽丝</h4><p>本作的男主角。比谁都更有男子气概。由于太有男子气概了以至于“为已经下过结论的事情再次烦恼实在不像是爱丽丝的作风”，于是5卷之后难以再将她作为焦点中心来描绘。抱歉啊爱丽丝。总之……在男性角色们的精神相当不稳定的本作中，不论何时都很稳定的爱丽丝是难得的存在。直到故事中盘为止，她和基尔之间恶劣的关系很令人怀念，但爱丽丝只是对针对自己的恶意很敏感而已，在基尔接受了她之后关系马上就变好了。我很喜欢描绘这两个人之间的互动。</p>
+<h4 id="基尔巴特"><a href="#基尔巴特" class="headerlink" title="基尔巴特"></a>基尔巴特</h4><p>本作的女主角。在描绘他软弱一面的时候，我也经常在想着“你够了啦~~~！”的同时感到十分焦急。但是19卷之后的基尔很有活力真是太好了呢。我觉得20卷中说着“你有什么不满吗奥兹！”那一格的基尔，是我画的最帅的基尔。原本的基尔是感情激烈、关心弟弟，非常坦率的人。虽然最终话中基尔“我能理解但是不能接受！！”的台词在画草图时很自然地就从笔下流出，但在当时在场全员都明白“这就是最好的选择”的情况下，仍然说出“就算这样我也不要！”这种任性话的基尔让作者本人感到被拯救了。</p>
+<h4 id="文森特"><a href="#文森特" class="headerlink" title="文森特"></a>文森特</h4><p>我觉得文森特是最初和最终印象有了很大变化的角色。在最初的大纲中，布雷克对他说“无论你如何渴望过去，那里都没有你的未来啊！！”，他以此为契机得到了救赎……虽然有过这种构想，但实际描绘的时候我发现“光凭那种话就得能到救赎的话，那他也不会变得这么扭曲了吧”……。他所寻求之物虽是“宽恕”，但哪怕是稍微和萨布利耶的悲剧有一点关系的人这么说的话，我总觉得他的反应会是“不想听你这么说”。能给他“那个”的只有艾达，最终我得出了这种结论。艾达真的是很努力了。</p>
+<h4 id="艾歌"><a href="#艾歌" class="headerlink" title="艾歌"></a>艾歌</h4><p>“艾歌最精彩的一幕就是将自己称为‘我’的时候”这是从一开始就已经定好了的，在23卷终于画到这一幕的时候感慨颇深。我在创作97话的时候，一直边听Kalafina的《misterioso》边画，最后的副歌前有一瞬间音符被拉长……我擅自妄想着“艾歌在这时抬头，帅气地说出‘「我」要！’”，情绪高涨起来。由于收录话数的偏差，虽然比本篇出得更早，但是22卷的封面上奥兹披着的是艾歌（诺伊兹）的斗篷。</p>
+<h4 id="埃利奥特"><a href="#埃利奥特" class="headerlink" title="埃利奥特"></a>埃利奥特</h4><p>明明生在那个奈特雷伊家，真亏埃利奥特能长成这么正直的人……我不由得这么想。这其中绝对是有理由的，要追根究底的话，“最小的孩子这么可爱，哥哥姐姐们无奈只好让他远离肮脏的事物”当然也是其中一个原因，但我觉得最重要的是基尔和文斯的存在。就像24+1卷中所描绘的那样，文斯给予了埃利奥特与以往完全不同的价值观，这样成长起来的埃利奥特成为了里奥的光，而里奥又成为了文森特的希望……。我想描绘出这种“感情”的循环。有好好描绘出来真是太好了。</p>
+<h4 id="里奥"><a href="#里奥" class="headerlink" title="里奥"></a>里奥</h4><p>其实里奥在试读版《潘多拉之心》中就已经存在了。看似悠然自得，实际上非常性急。虽然对主人的态度很随意，但比谁都更重视他。我觉得他不是那种容易理解的常规角色，但描绘起来竟然也没有那么困难，反而越画越有味道，对作者来说也是很奇妙的角色。他和奥兹、埃利奥特3个人在一起时的平衡感真是绝妙，真想再多画些这3个人之间的互动。文森特和里奥的主从关系也是，原本的立场逆转，各方面都颠倒过来，描绘这些很有意思。让文斯打开了新大门（M）的里奥真是厉害啊。</p>
+<h4 id="夏萝"><a href="#夏萝" class="headerlink" title="夏萝"></a>夏萝</h4><p>首先我想对夏萝道歉“反复拿出场戏份太少来玩梗真是抱歉……”。真是抱歉啊……。这次为了挑选用来展示的画而重看了一遍单行本，但是看着12卷中夏萝说出“我确实失去了一些东西……但从这种丧失之中能够获得什么，就完全取决于我自己了”的这一幕，“我……竟然写了这种台词吗。干得不错嘛”，有些想表扬过去的自己了。这里说的“干得不错嘛”，不是指“过去的我写了不错的台词”，而是“我好好理解了夏萝的坚强之处并将其写入台词中”的意思。她是位很坚强的女性。</p>
+<h4 id="布雷克"><a href="#布雷克" class="headerlink" title="布雷克"></a>布雷克</h4><p>布雷克是按照“自己作为主角的故事已经完结了的角色”这种感觉来描绘的。所以，我原本觉得他自身不太有成长的余地，但却在描绘的过程中逐渐看见他的人性（主要是糟糕的方面），我终于察觉到“啊啊，这个人还能继续‘改变’的”。向夏萝坦白自己已经失去视力、寻求基尔巴特的帮助、得知雷姆还活着后露出丢人的表情、——最后的最后想着“不想死”。布雷克可能会觉得那些都是他的弱点，露出一脸复杂的表情，但是我觉得有描绘出他的“改变”真是太好了。</p>
+<h4 id="雷姆"><a href="#雷姆" class="headerlink" title="雷姆"></a>雷姆</h4><p>我以前好像也有在哪里写过，基尔是为了“私”而舍弃“公”的人，而雷姆则是为了“公”而舍弃“私”的人。冷静地把握局势，支援周围的人，必要时甚至会做出冷酷的判断。根据本人的性格来看，虽然我觉得可能会很困难，但在故事终盘，比起“公”，他更优先选择了“私”，奔向重要的两人身边，我打从心底松了一口气。“要怎么样才能让雷姆主动离开他的岗位（女公爵身边）呢？”我曾对这一难题感到头疼。他过于优秀以致于有些可怕，但是如果成为同伴的话，比谁都更让人安心。</p>
+]]></content>
+      <categories>
+        <category>其它归档</category>
+      </categories>
+      <tags>
+        <tag>PandoraHearts</tag>
       </tags>
   </entry>
   <entry>
@@ -3071,7 +3071,7 @@ password:
 </div>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
-        <category>杂货堆</category>
+        <category>随便写写</category>
       </categories>
       <tags>
         <tag>少女革命</tag>
@@ -3324,10 +3324,49 @@ password:
 </div>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
-        <category>杂货堆</category>
+        <category>随便写写</category>
       </categories>
       <tags>
         <tag>总结</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>活过来了（一点）</title>
+    <url>/posts/326b3f11.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>那一天，某人终于想起来曾经搭建过一个博客——<br><del>博客是什么能吃吗</del><br>总之，放着也是浪费，还是偶尔记录点东西好了）<br>比如说游戏记录什么的↓↓↓</p>
+<p><img src="/posts/326b3f11/20240717174539_1.jpg" alt="20240717174539_1"></p>
+<p><img src="/posts/326b3f11/20240717175334.png" alt="20240717175334"></p>
+<center><font size="2">好消息好消息，又把蔚蓝B面全通了一遍，至于剩下的成就……<br>打还是不打，这是个问题。</font></center>
+
+<br>
+
+<p><img src="/posts/326b3f11/20240717151801.png" alt="20240717151801"></p>
+<center><font size="2">顺便解锁了几个八百年前的遗留</font></center>
+
+<br>
+
+<p><img src="/posts/326b3f11/20240717154204.png" alt="20240717154204"></p>
+<center><font size="2">孩子再也不想受苦了</font></center>
+
+<hr>
+<p>距离下家入职估计还有一段时间，然而闲下来却有些不知道该干什么好了……明明前几年还有好多想学想干的事，现在就是精神阳痿。这就是工作对人的摧残吗，我逐渐理解一切（x）</p>
+<p>好像有那么一秒钟我get了老一辈为什么总想找点工作做。<del>不你不想get。</del></p>
+<p>好在百无聊赖时推了chaos;child，触发了一些情（中）怀（二），总算想起把入库已久的冷饭给解冻了。</p>
+<p><img src="/posts/326b3f11/20240717154645.png" alt="20240717154645"></p>
+<center><font size="2">说的就是那边那个Elite</font></center>
+
+<p>在武汉的酷暑下半死不活的吹着空调推adv……唔噢噢，好像在过暑假一样！</p>
+<p>甚至好巧不巧看到老婆手办再版……这一定是机关的阴谋……！针对我钱包的阴谋！</p>
+<img src="/posts/326b3f11/4AE83732C46A6F0C6C65C24120A729BC.jpg" width="50%" height="50%">
+
+<p>买买买，买tmd！<span style="background:#555559 !important;">但为毛这么贵啊！2024年了这破石门到底算是有人气还是没人气啊？！</span></p>
+<p>不过，才在家休息了几天就浮现出家庭矛盾激化的征兆，这点也和暑假一样呢╮（￣▽￣）╭</p>
+<br>
+
+<p>人果然还是得上班(　^ω^)</p>
+]]></content>
+      <categories>
+        <category>随便写写</category>
+      </categories>
   </entry>
 </search>
