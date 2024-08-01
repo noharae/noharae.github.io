@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><!-- hexo injector head_begin start -->
+<link rel="stylesheet" href="/css/bilicard.css">
+<!-- hexo injector head_begin end -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons8-flower-32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons8-flower-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons8-flower-16.png">
+  <link rel="mask-icon" href="/images/icons8-flower-32.png" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans SC:300,300italic,400,400italic,700,700italic|monospace:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"noharae.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+  <meta property="og:type" content="article">
+<meta property="og:title" content="STEINS;GATE 線形拘束のフェノグラム">
+<meta property="og:url" content="https://noharae.github.io/posts/f840dc87.html">
+<meta property="og:site_name" content="野原">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240729160402_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240729142104_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240729142159_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240729142253_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/%E6%88%AA%E5%9B%BE%EF%BC%9A20240729142516.png">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/%E6%88%AA%E5%9B%BE%EF%BC%9A20240729142352.png">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/%E6%88%AA%E5%9B%BE%EF%BC%9A20240729142435.png">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/%E6%88%AA%E5%9B%BE%EF%BC%9A20240729142457.png">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/pub_ev02ipad-1722241423146-20.png">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240729160409_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240729160415_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728221744_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240729141458_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/EV_OKA001E0ipad.png">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240726170706_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240726161740_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240726163924_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240726164300_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240726174235_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240726212227_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240726174825_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240726175555_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240726183924_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240726175950_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/ria.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240726185456_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240726185512_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240726190024_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240726190045_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240726204733_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/ma.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/image-20240729213804019.png">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240726211950_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/sd.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727100650_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727103549_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727103606_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/cen.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727103219_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727104745_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/sooteer.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/ghost.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727110537_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/ojisan.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727111442_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/daru.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727113110_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727114113_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/shower.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727115155_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727115243_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727115430_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/korosu.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727120044_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727120447_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727123744_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727124609_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727124624_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727141206_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727141207_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727142605_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727143112_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727143138_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/office.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/moeka.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/mama.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727144814_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727144852_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727145133_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727145318_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727152017_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727145448_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727145853_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727150848_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727151044_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727151238_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727151822_2.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727152621_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/otsu.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/kanpai.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727153744_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727153649_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727162230_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727164652_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727205404_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727205918_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727211355_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727211401_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727211416_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/joshu.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/otaku.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240727213853_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/waraenai.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728100429_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728100827_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728100838_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240729112604_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728101555_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728101721_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728101748_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728101759_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728101933_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728102319_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728102323_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728102624_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728104020_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728111056_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/baka.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728105344_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728105354_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728105402_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728105711_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728105715_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728110113_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728111304_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728112527_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728112539_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728113533_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728113709_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728113834_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728113931_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728121933_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728121937_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728124327_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728123512_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728104344_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728124704_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728124735_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728124745_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728124836_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728124937_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/2.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/tsuki.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/koi.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/146.png">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/147.png">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/waraeba.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/meshimazu.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/meshimazu2.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/konai.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728144526_2.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728150103_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728174342_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/kuri.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728174545_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/okabeee.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/mate.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/yu1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/yu2.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/onaji.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728212012_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/kuruma.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728212605_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728212639_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/kuruma2.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728222954_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/sidekick1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728213403_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/sidekick0.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728213512_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728214056_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728214120_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/suki.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/sidekick2.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728220754_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/hito.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728221027_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240728222323_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240729141534_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240729141539_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240729114242_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240729115133_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240729135546_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240729140629_1.jpg">
+<meta property="og:image" content="https://noharae.github.io/posts/f840dc87/20240729140641_1.jpg">
+<meta property="article:published_time" content="2024-08-01T03:35:02.000Z">
+<meta property="article:modified_time" content="2024-08-01T07:34:01.415Z">
+<meta property="article:author" content="望月木">
+<meta property="article:tag" content="SteinsGate">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://noharae.github.io/posts/f840dc87/20240729160402_1.jpg">
+
+<link rel="canonical" href="https://noharae.github.io/posts/f840dc87.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>STEINS;GATE 線形拘束のフェノグラム | 野原</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="野原" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">野原</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-追番">
+
+    <a href="/bangumis/" rel="section"><i class="fa fa-tv fa-fw"></i>追番</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://noharae.github.io/posts/f840dc87.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar-2.jpg">
+      <meta itemprop="name" content="望月木">
+      <meta itemprop="description" content="<br>望月木's blog<br>随意堆放些喜欢的东西<br>请善用分类和标签进行检索<br><br>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="野原">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          STEINS;GATE 線形拘束のフェノグラム
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2024-08-01 11:35:02" itemprop="dateCreated datePublished" datetime="2024-08-01T11:35:02+08:00">2024-08-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/" itemprop="url" rel="index"><span itemprop="name">随便写写</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">字数：</span>
+              <span>3.2k</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本想推完elite复习一下0的……然而终究还是默默含着刀退了出来，我……我得缓缓……</p>
+<p>正好重新在steam上玩一遍树状图，顺便打个全成就</p>
+<p><img src="/posts/f840dc87/20240729160402_1.jpg" alt="20240729160402_1"></p>
+<p>这下除了比翼以外就全收集了</p>
+<p><img src="/posts/f840dc87/20240729142104_1.jpg" alt="20240729142104_1"></p>
+<p><img src="/posts/f840dc87/20240729142159_1.jpg" alt="20240729142159_1"></p>
+<p><img src="/posts/f840dc87/20240729142253_1.jpg" alt="20240729142253_1"></p>
+<p>至于比翼……就算重玩我大概也只会推助手线（？</p>
+<br>
+
+<details>
+<summary>四作全成就</summary>
+<pre><code>
+<img src="/posts/f840dc87/截图：20240729142516.png" alt="截图：20240729142516">
+<img src="/posts/f840dc87/截图：20240729142352.png" alt="截图：20240729142352">
+<img src="/posts/f840dc87/截图：20240729142435.png" alt="截图：20240729142435">
+<img src="/posts/f840dc87/截图：20240729142457.png" alt="截图：20240729142457">
+</code></pre>
+</details>
+<br>
+
+<p><del>石头门到底偷走了我的多少时间……</del></p>
+<hr>
+<p>话说回来，明明感觉也没过那么多年（？），好多内容却已经不记得了，等到下次回顾的时候估计记忆力更不妙了）</p>
+<p>为了<del>预防老年痴呆</del>，还是留些<del>支离破碎的</del><span style="background:#555559 !important;">细看都是助手相关的</span>记录好了。</p>
+<p><img src="/posts/f840dc87/pub_ev02ipad-1722241423146-20.png" alt="pub_ev02~ipad"></p>
+<hr>
+<h3 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h3><p>还记得第一次打开树状图的时候就被这个辉光的标题界面吸引了，没事就想点两下切换乱码，so cool~</p>
+<p><img src="/posts/f840dc87/20240729160409_1.jpg" alt="20240729160409_1"></p>
+<p><img src="/posts/f840dc87/20240729160415_1.jpg" alt="20240729160415_1"></p>
+<p>真的很有品味）</p>
+<p><img src="/posts/f840dc87/20240728221744_1.jpg" alt="20240728221744_1"></p>
+<p><img src="/posts/f840dc87/20240729141458_1.jpg" alt="20240729141458_1"></p>
+<hr>
+<h3 id="扫描线上的化身博士（走査線上のジキル-Dr-Jekyll-on-lines-）"><a href="#扫描线上的化身博士（走査線上のジキル-Dr-Jekyll-on-lines-）" class="headerlink" title="扫描线上的化身博士（走査線上のジキル-Dr. Jekyll on lines-）"></a>扫描线上的化身博士（<ruby>走査線上のジキル<rt>-Dr. Jekyll on lines-</rt></ruby>）</h3><blockquote>
+<p>STORY 岡部倫太郎<br>SCENARIO 下倉バイオ<br>DIVERGENCE 0.337199</p>
+</blockquote>
+<p><img src="/posts/f840dc87/EV_OKA001E0ipad.png" alt="EV_OKA001E0~ipad"></p>
+<p>羊驼超人委实生草，凶真你竟有如此缝纫手艺<del>远远超过助手</del>。</p>
+<p><img src="/posts/f840dc87/20240726170706_1.jpg" alt="20240726170706_1">因为凶真不回邮件而不断骚扰的某人，打开Mail List才发现居然每隔两小时就发一封……你是设了定时吗？这么精准……？</p>
+<details>
+<summary>麻吉意义不明ｗｗ这种情况下的助手真的会发这种话？</summary>
+<pre><code>
+<img src="/posts/f840dc87/20240726161740_1.jpg" alt="20240726161740_1">
+</code></pre>
+</details>
+
+<p>丧服也谜之好看真是多谢款待</p>
+<p><img src="/posts/f840dc87/20240726163924_1.jpg" alt="20240726163924_1"></p>
+<p>嘴上骂得欢实际上心软得很，连升级款软件都准备好了的某助手）</p>
+<p><img src="/posts/f840dc87/20240726164300_1.jpg" alt="20240726164300_1"></p>
+<p>不管重来多少次红莉栖大概都会帮忙吧）</p>
+<hr>
+<h3 id="绚烂假想的蛇蝎美人（絢爛仮想のファムファタール-Bird-Singing-in-Cage-）"><a href="#绚烂假想的蛇蝎美人（絢爛仮想のファムファタール-Bird-Singing-in-Cage-）" class="headerlink" title="绚烂假想的蛇蝎美人（絢爛仮想のファムファタール-Bird Singing in Cage-）"></a>绚烂假想的蛇蝎美人（<ruby>絢爛仮想のファムファタール<rt>-Bird Singing in Cage-</rt></ruby>）</h3><blockquote>
+<p>STORY 橋田至<br>SCENARIO 林直孝&#x2F;原案：横谷昌宏<br>DIVERGENCE 3.019430</p>
+</blockquote>
+<p>开屏就有现充组合痛击肥宅，白大褂不也是很好的情侣装吗（？）</p>
+<p><img src="/posts/f840dc87/20240726174235_1.jpg" alt="20240726174235_1"></p>
+<p><img src="/posts/f840dc87/20240726212227_1.jpg" alt="20240726212227_1"></p>
+<center>般　配</center>
+
+<br>
+
+<p>一如既往的追着蒙古斑不放ww</p>
+<p><img src="/posts/f840dc87/20240726174825_1.jpg" alt="20240726174825_1"></p>
+<p>刷@ch被冈部发现要求他对大家保密</p>
+<p>刷@ch被桶子发现只要求他对冈部保密</p>
+<p><img src="/posts/f840dc87/20240726175555_1.jpg" alt="20240726175555_1"></p>
+<p>可见冈部那一张嘴是有多讨<ruby>人<rt>红莉栖</rt></ruby>嫌哈哈哈哈哈</p>
+<p><img src="/posts/f840dc87/20240726183924_1.jpg" alt="20240726183924_1"></p>
+<p>冈部：孙啊，你奶奶她是个ねらー！</p>
+<p>事实证明只要冈部知道了就有事没事拿网名调侃红莉栖，还老是在人家完全不知道自己爆过网名的时刻给予痛击）</p>
+<br>
+
+<p><img src="/posts/f840dc87/20240726175950_1.jpg" alt="20240726175950_1"></p>
+<p>果然是<del>因为都是HENTAI所以</del>关系很不错（x</p>
+<br>
+
+<p>虽然现在还没有这种兴趣，但是以后会有的（</p>
+<p><img src="/posts/f840dc87/ria.jpg" alt="ria"></p>
+<p>我要是桶子我也想让他俩爆炸（</p>
+<br>
+
+<p>你的遗产就只有dr.pe吗）</p>
+<p><img src="/posts/f840dc87/20240726185456_1.jpg" alt="20240726185456_1"></p>
+<p>树状图的立绘里很喜欢凶真这个有点神经但又很明朗的笑容ww</p>
+<p><img src="/posts/f840dc87/20240726185512_1.jpg" alt="20240726185512_1"></p>
+<p>凶真在按摩店被“拷问”了www助手完全没get还以为真被拷问了，担心得要死www</p>
+<p><img src="/posts/f840dc87/20240726190024_1.jpg" alt="20240726190024_1"></p>
+<p>冈伦叔叔又没用啦www</p>
+<p><img src="/posts/f840dc87/20240726190045_1.jpg" alt="20240726190045_1"></p>
+<p><img src="/posts/f840dc87/20240726204733_1.jpg" alt="20240726204733_1"></p>
+<p>按个摩回来还有人安慰受伤的心灵，果然还是爆炸吧！</p>
+<p><img src="/posts/f840dc87/ma.jpg" alt="ma"></p>
+<p>这不巧了吗www</p>
+<p><img src="/posts/f840dc87/image-20240729213804019.png" alt="image-20240729213804019"></p>
+<p><del>总是在操心父母爱情的</del>铃羽</p>
+<p><img src="/posts/f840dc87/20240726211950_1.jpg" alt="20240726211950_1"></p>
+<p>比翼线，反正就是HE和HE和HE！</p>
+<hr>
+<h3 id="黄昏色的救世主（黄昏色のソーテール-Vermilion-Sooteer-）"><a href="#黄昏色的救世主（黄昏色のソーテール-Vermilion-Sooteer-）" class="headerlink" title="黄昏色的救世主（黄昏色のソーテール-Vermilion Sooteer-）"></a>黄昏色的救世主（<ruby>黄昏色のソーテール<rt>-Vermilion Sooteer-</rt></ruby>）</h3><blockquote>
+<p>STORY 牧瀬紅莉栖<br>SCENARIO 下倉バイオ<br>DIVERGENCE 0.337199</p>
+</blockquote>
+<p><img src="/posts/f840dc87/sd.jpg" alt="sd"></p>
+<p>女儿听了都觉得羞耻）</p>
+<p><img src="/posts/f840dc87/20240727100650_1.jpg" alt="20240727100650_1"></p>
+<p>虽然铃羽一如既往的被收束了（？），不过这条线秋叶幸高没死，他爸变得偏激的理由大概也因此减少了吧。</p>
+<p><img src="/posts/f840dc87/20240727103549_1.jpg" alt="20240727103549_1"></p>
+<p><img src="/posts/f840dc87/20240727103606_1.jpg" alt="20240727103606_1"></p>
+<p>和巴别塔串上了</p>
+<p><img src="/posts/f840dc87/cen.jpg" alt="cen"></p>
+<p>祖传的傲娇</p>
+<p><img src="/posts/f840dc87/20240727103219_1.jpg" alt="20240727103219_1"></p>
+<p>结果不愿意使用时间机器的红莉栖还是因为他爸的建议才愿意回跳的）<del>死父控</del></p>
+<p><img src="/posts/f840dc87/20240727104745_1.jpg" alt="20240727104745_1"></p>
+<p>ヘタレーニャン笑死</p>
+<br>
+
+<p>想要帮助某人的心情如此强烈但最后还是说不出什么好听话的红莉栖www</p>
+<p><img src="/posts/f840dc87/sooteer.jpg" alt="sooteer"></p>
+<hr>
+<h3 id="幽灵障害的会合（幽霊障害のランデヴー-Ghosting-Rendezvous-）"><a href="#幽灵障害的会合（幽霊障害のランデヴー-Ghosting-Rendezvous-）" class="headerlink" title="幽灵障害的会合（幽霊障害のランデヴー-Ghosting Rendezvous-）"></a>幽灵障害的会合（<ruby>幽霊障害のランデヴー<rt>-Ghosting Rendezvous-</rt></ruby>）</h3><blockquote>
+<p>STORY 阿万音鈴羽<br>SCENARIO 新井輝<br>DIVERGENCE 0.337337</p>
+</blockquote>
+<p>一直觉得铃羽叠加的这条线很有意思</p>
+<p>不过原理真是个谜）</p>
+<p><img src="/posts/f840dc87/ghost.jpg" alt="ghost"></p>
+<p>总是会做出一模一样的动作真是太可爱了</p>
+<p><img src="/posts/f840dc87/20240727110537_1.jpg" alt="20240727110537_1"></p>
+<p>冈伦叔叔www</p>
+<p><img src="/posts/f840dc87/ojisan.jpg" alt="ojisan"></p>
+<p>女仆铃羽你看见你爸这么胖不吃惊吗www难道和平线的你爸不减肥了吗www</p>
+<p><img src="/posts/f840dc87/20240727111442_1.jpg" alt="20240727111442_1"></p>
+<p>认亲这段爆笑</p>
+<p><img src="/posts/f840dc87/daru.jpg" alt="daru"></p>
+<p>铃羽还提防着红莉栖的有毒料理wwww</p>
+<p>但是轻易就被小蛋糕收买了wwww</p>
+<p><img src="/posts/f840dc87/20240727113110_1.jpg" alt="20240727113110_1"></p>
+<p>死父控还是那么容易被别人家的父女情打动）</p>
+<br>
+
+<p>这话说的，<del>我马上改磕红莉栖x真由理</del></p>
+<p><img src="/posts/f840dc87/20240727114113_1.jpg" alt="20240727114113_1"></p>
+<p>HENTAI被抓现行……去死吧HENTAI！</p>
+<p><img src="/posts/f840dc87/shower.jpg" alt="shower"></p>
+<p><img src="/posts/f840dc87/20240727115155_1.jpg" alt="20240727115155_1"></p>
+<p><img src="/posts/f840dc87/20240727115243_1.jpg" alt="20240727115243_1">委员长wwww</p>
+<br>
+
+<p><img src="/posts/f840dc87/20240727115430_1.jpg" alt="20240727115430_1"></p>
+<p>我也同意www</p>
+<p><img src="/posts/f840dc87/korosu.jpg" alt="korosu"></p>
+<p>狠狠警告www</p>
+<p><img src="/posts/f840dc87/20240727120044_1.jpg" alt="20240727120044_1"></p>
+<p>爆炸吧你！</p>
+<p><img src="/posts/f840dc87/20240727120447_1.jpg" alt="20240727120447_1"></p>
+<p><img src="/posts/f840dc87/20240727123744_1.jpg" alt="20240727123744_1"></p>
+<p><del>红莉栖x铃羽我也可以……</del></p>
+<p><img src="/posts/f840dc87/20240727124609_1.jpg" alt="20240727124609_1"></p>
+<p><img src="/posts/f840dc87/20240727124624_1.jpg" alt="20240727124624_1"></p>
+<p>幸福的日常~</p>
+<hr>
+<h3 id="雨铃铃曲的消除（雨鈴鈴曲のスクレイパー-A-Strange-Building-Filled-Of-Love-）"><a href="#雨铃铃曲的消除（雨鈴鈴曲のスクレイパー-A-Strange-Building-Filled-Of-Love-）" class="headerlink" title="雨铃铃曲的消除（雨鈴鈴曲のスクレイパー-A Strange Building Filled Of Love-）"></a>雨铃铃曲的消除（<ruby>雨鈴鈴曲のスクレイパー<rt>-A Strange Building Filled Of Love-</rt></ruby>）</h3><blockquote>
+<p>STORY 天王寺裕吾<br>SCENARIO 坂本正吾<br>DIVERGENCE 3.386019</p>
+</blockquote>
+<p>让红莉栖住这里方便你去骚扰是吧（笑</p>
+<p><img src="/posts/f840dc87/20240727141206_1.jpg" alt="20240727141206_1"></p>
+<p><img src="/posts/f840dc87/20240727141207_1.jpg" alt="20240727141207_1"></p>
+<p>摆个中二姿势就和魔眼助手图成一对了（x</p>
+<p><img src="/posts/f840dc87/20240727142605_1.jpg" alt="20240727142605_1"></p>
+<br>
+
+<p>直接快进到反物质委员会（x</p>
+<p><img src="/posts/f840dc87/20240727143112_1.jpg" alt="20240727143112_1"></p>
+<p><img src="/posts/f840dc87/20240727143138_1.jpg" alt="20240727143138_1"></p>
+<br>
+
+<details>
+<summary>黑心老板凶真</summary>
+<pre><code>
+<img src="/posts/f840dc87/office.jpg" alt="office">
+</code></pre>
+</details>
+
+<br>
+
+<p>FB只对萌郁没办法）</p>
+<p><img src="/posts/f840dc87/moeka.jpg" alt="moeka"></p>
+<br>
+
+<p>在Mr. Braun说给绹的母役3亿之后争先恐后当妈的屑凶真和桶子）</p>
+<p>凤凰院凶妈妈www冈伦叔叔妈妈www桶子妈妈www</p>
+<p><img src="/posts/f840dc87/mama.jpg" alt="mama"></p>
+<p>Labmem多少都有点不正常wwww</p>
+<p><img src="/posts/f840dc87/20240727144814_1.jpg" alt="20240727144814_1"></p>
+<p>公认最有母性（但是，是男的</p>
+<p><img src="/posts/f840dc87/20240727144852_1.jpg" alt="20240727144852_1"></p>
+<p>坚持不愿意让真由理当小绹妈妈的某个保护者）））</p>
+<p><img src="/posts/f840dc87/20240727145133_1.jpg" alt="20240727145133_1"></p>
+<p>给琉华的备注是琉华小姐……给红莉栖的备注是学者之卵……wwww</p>
+<p><img src="/posts/f840dc87/20240727145318_1.jpg" alt="20240727145318_1"></p>
+<p><img src="/posts/f840dc87/20240727152017_1.jpg" alt="20240727152017_1"></p>
+<p>仲良し～</p>
+<p><img src="/posts/f840dc87/20240727145448_1.jpg" alt="20240727145448_1"></p>
+<p>猫猫大楼wwww</p>
+<p><img src="/posts/f840dc87/20240727145853_1.jpg" alt="20240727145853_1"></p>
+<p>也让我加入吧（做梦</p>
+<p><img src="/posts/f840dc87/20240727150848_1.jpg" alt="20240727150848_1"></p>
+<p><img src="/posts/f840dc87/20240727151044_1.jpg" alt="20240727151044_1"></p>
+<p><img src="/posts/f840dc87/20240727151238_1.jpg" alt="20240727151238_1"></p>
+<p>不要开发奇怪的东西啊）））</p>
+<p><img src="/posts/f840dc87/20240727151822_2.jpg" alt="20240727151822_2"></p>
+<p>为了真由理而到处租房子的okarin）</p>
+<p><img src="/posts/f840dc87/20240727152621_1.jpg" alt="20240727152621_1"></p>
+<p><img src="/posts/f840dc87/otsu.jpg" alt="otsu"></p>
+<p>无人配合（笑）</p>
+<p><img src="/posts/f840dc87/kanpai.jpg" alt="kanpai"></p>
+<br>
+
+<br>
+
+<p><img src="/posts/f840dc87/20240727153744_1.jpg" alt="20240727153744_1"></p>
+<p><img src="/posts/f840dc87/20240727153649_1.jpg" alt="20240727153649_1"></p>
+<p>一家人一家人，大家都是一家人啊！</p>
+<hr>
+<h3 id="桃色幻都的黑猫（桃色幻都のシャ・ノワール-Super-hero-Chat-noir-）"><a href="#桃色幻都的黑猫（桃色幻都のシャ・ノワール-Super-hero-Chat-noir-）" class="headerlink" title="桃色幻都的黑猫（桃色幻都のシャ・ノワール-Super hero Chat-noir-）"></a>桃色幻都的黑猫（<ruby>桃色幻都のシャ・ノワール<rt>-Super hero Chat-noir-</rt></ruby>）</h3><blockquote>
+<p>STORY フェイリス・ニャンニャン<br>SCENARIO 気賀沢昌志<br>DIVERGENCE 3.030493</p>
+</blockquote>
+<p><img src="/posts/f840dc87/20240727162230_1.jpg" alt="20240727162230_1"></p>
+<p>这个装扮看几遍都觉得好笑……</p>
+<p><img src="/posts/f840dc87/20240727164652_1.jpg" alt="20240727164652_1"></p>
+<p>能重逢真的太好了</p>
+<p><span style="background:#555559 !important;">但是年龄突然就差了一辈多啊喂</span></p>
+<hr>
+<h3 id="迷宫错综的雌雄共体（迷宮錯綜のヘルマフロディトス-Hermaphroditus-in-Labyrinth-）"><a href="#迷宫错综的雌雄共体（迷宮錯綜のヘルマフロディトス-Hermaphroditus-in-Labyrinth-）" class="headerlink" title="迷宫错综的雌雄共体（迷宮錯綜のヘルマフロディトス-Hermaphroditus in Labyrinth-）"></a>迷宫错综的雌雄共体（<ruby>迷宮錯綜のヘルマフロディトス<rt>-Hermaphroditus in Labyrinth-</rt></ruby>）</h3><blockquote>
+<p>STORY 漆原るか<br>SCENARIO 安本亨<br>DIVERGENCE 0.456923</p>
+</blockquote>
+<p><img src="/posts/f840dc87/20240727205404_1.jpg" alt="20240727205404_1">量子力学是中二必备知识2333</p>
+<p><img src="/posts/f840dc87/20240727205918_1.jpg" alt="20240727205918_1"></p>
+<p><img src="/posts/f840dc87/20240727211355_1.jpg" alt="20240727211355_1">一接到电话就赶来帮忙，你是天使吗（泪）……还偷偷在lab外徘徊，担心冈部会不会有什么事555</p>
+<p><img src="/posts/f840dc87/20240727211401_1.jpg" alt="20240727211401_1"></p>
+<p><img src="/posts/f840dc87/20240727211416_1.jpg" alt="20240727211416_1"></p>
+<p>红莉栖帮忙回跳也挺合理的……毕竟冈部都成那样了……</p>
+<p><img src="/posts/f840dc87/joshu.jpg" alt="joshu"></p>
+<p>早就觉得琉华他爸让儿子穿巫女装不对劲2333果然他爸也是资深死宅吗2333两次回复都很自曝2333</p>
+<p><img src="/posts/f840dc87/otaku.jpg" alt="otaku"></p>
+<p>真由理的笑容对任何人来说都是绝杀吧）</p>
+<p><img src="/posts/f840dc87/20240727213853_1.jpg" alt="20240727213853_1"></p>
+<p>人的记忆很奇妙……之前我已经完全忘记了本篇琉华回跳过，但偏偏记得树状图这里的回跳……</p>
+<p><img src="/posts/f840dc87/waraenai.jpg" alt="waraenai"></p>
+<p>结局后接（类似）真结局的剧情也不错</p>
+<hr>
+<h3 id="悠远不变的北极星（悠遠不変のポラリス-EternaPolaris-）"><a href="#悠远不变的北极星（悠遠不変のポラリス-EternaPolaris-）" class="headerlink" title="悠远不变的北极星（悠遠不変のポラリス-EternaPolaris-）"></a>悠远不变的北极星（<ruby>悠遠不変のポラリス<rt>-EternaPolaris-</rt></ruby>）</h3><blockquote>
+<p>STORY 椎名まゆり<br>SCENARIO みかづき紅月<br>DIVERGENCE 0.571046</p>
+</blockquote>
+<p><img src="/posts/f840dc87/20240728100429_1.jpg" alt="20240728100429_1">真由理的房间里好多奇怪的蘑菇生物……（</p>
+<p><img src="/posts/f840dc87/20240728100827_1.jpg" alt="20240728100827_1"></p>
+<p><img src="/posts/f840dc87/20240728100838_1.jpg" alt="20240728100838_1"></p>
+<p>不一样的脚本家，一样的圣母在上）</p>
+<details>
+<summary>后续绹线也有</summary>
+<pre><code>
+<img src="/posts/f840dc87/20240729112604_1.jpg" alt="20240729112604_1">
+</code></pre>
+</details>
+
+<br>
+
+<p>真由理忘记拿花，遇到了绝望中的红莉栖，带去喵喵店里</p>
+<p><img src="/posts/f840dc87/20240728101555_1.jpg" alt="20240728101555_1"></p>
+<p>强制投喂巧克力！天然克傲娇！</p>
+<p><img src="/posts/f840dc87/20240728101721_1.jpg" alt="20240728101721_1"></p>
+<p><img src="/posts/f840dc87/20240728101748_1.jpg" alt="20240728101748_1"><img src="/posts/f840dc87/20240728101759_1.jpg" alt="20240728101759_1"><img src="/posts/f840dc87/20240728101933_1.jpg" alt="20240728101933_1"></p>
+<p>这条线接巴别塔还接的挺好的w细节拉满</p>
+<p><img src="/posts/f840dc87/20240728102319_1.jpg" alt="20240728102319_1"></p>
+<p><img src="/posts/f840dc87/20240728102323_1.jpg" alt="20240728102323_1"></p>
+<p><img src="/posts/f840dc87/20240728102624_1.jpg" alt="20240728102624_1"></p>
+<br>
+
+<p>不是一家人，不进一家门啊（x</p>
+<p><img src="/posts/f840dc87/20240728104020_1.jpg" alt="20240728104020_1"></p>
+<p><img src="/posts/f840dc87/20240728111056_1.jpg" alt="20240728111056_1"></p>
+<details>
+<summary>一点都不像！</summary>
+<pre><code>
+<img src="/posts/f840dc87/baka.jpg" alt="baka">
+</code></pre>
+</details>
+
+<br>
+
+<p>好不容易找到人之后全力撞向红莉栖也很真由理www</p>
+<p><img src="/posts/f840dc87/20240728105344_1.jpg" alt="20240728105344_1"></p>
+<p><img src="/posts/f840dc87/20240728105354_1.jpg" alt="20240728105354_1"></p>
+<p><img src="/posts/f840dc87/20240728105402_1.jpg" alt="20240728105402_1"></p>
+<p>为什么找到人了却不说呢，因为他俩在<del>one last</del> kiss啊）））</p>
+<br>
+
+<p><img src="/posts/f840dc87/20240728105711_1.jpg" alt="20240728105711_1"></p>
+<p><img src="/posts/f840dc87/20240728105715_1.jpg" alt="20240728105715_1"></p>
+<p>我要是真由理她爸也得崩溃（</p>
+<p><img src="/posts/f840dc87/20240728110113_1.jpg" alt="20240728110113_1"></p>
+<p>女子会，但是炸鸡可乐披萨杯面）</p>
+<p><img src="/posts/f840dc87/20240728111304_1.jpg" alt="20240728111304_1"></p>
+<p>都在人家海马里留下长期记忆了还说讨厌（（（</p>
+<p><img src="/posts/f840dc87/20240728112527_1.jpg" alt="20240728112527_1"></p>
+<p><img src="/posts/f840dc87/20240728112539_1.jpg" alt="20240728112539_1"></p>
+<p>中学二年级的冈伦，好痛www</p>
+<br>
+
+<p><img src="/posts/f840dc87/20240728113533_1.jpg" alt="20240728113533_1"></p>
+<p><img src="/posts/f840dc87/20240728113709_1.jpg" alt="20240728113709_1"><img src="/posts/f840dc87/20240728113834_1.jpg" alt="20240728113834_1">好像很凶但其实一点威慑力都没有2333</p>
+<br>
+
+<p><img src="/posts/f840dc87/20240728113931_1.jpg" alt="20240728113931_1"><img src="/posts/f840dc87/20240728121933_1.jpg" alt="20240728121933_1"></p>
+<p><img src="/posts/f840dc87/20240728121937_1.jpg" alt="20240728121937_1">和真由理在一起的时光总是很温暖w</p>
+<br>
+
+<p><img src="/posts/f840dc87/20240728124327_1.jpg" alt="20240728124327_1"></p>
+<p>是老虚对吧（笑）</p>
+<br>
+
+<p><img src="/posts/f840dc87/20240728123512_1.jpg" alt="20240728123512_1"></p>
+<p>今天不当人质啦！</p>
+<br>
+
+<p><img src="/posts/f840dc87/20240728104344_1.jpg" alt="20240728104344_1"></p>
+<p><img src="/posts/f840dc87/20240728124704_1.jpg" alt="20240728124704_1"><img src="/posts/f840dc87/20240728124735_1.jpg" alt="20240728124735_1"><img src="/posts/f840dc87/20240728124745_1.jpg" alt="20240728124745_1"><img src="/posts/f840dc87/20240728124836_1.jpg" alt="20240728124836_1"><img src="/posts/f840dc87/20240728124937_1.jpg" alt="20240728124937_1">浪漫主义的中二病大胜利！</p>
+<p>甚至我觉得这章比本篇真由理线更好……</p>
+<p><span style="background:#555559 !important;">本篇真由理线只能看着红莉栖去死但是什么都做不了，太无力了……</span></p>
+<hr>
+<h3 id="昏睡励起的量子（昏睡励起のクアンタム-Quantum-excited-in-Coma-）"><a href="#昏睡励起的量子（昏睡励起のクアンタム-Quantum-excited-in-Coma-）" class="headerlink" title="昏睡励起的量子（昏睡励起のクアンタム-Quantum excited in Coma-）"></a>昏睡励起的量子（<ruby>昏睡励起のクアンタム<rt>-Quantum excited in Coma-</rt></ruby>）</h3><blockquote>
+<p>STORY 桐生萌郁<br>SCENARIO 暁影二<br>DIVERGENCE 0.509736</p>
+</blockquote>
+<p><img src="/posts/f840dc87/1.jpg" alt="1">又见蒙古斑2333</p>
+<details>
+<summary>甚至助手还特地确认了2333</summary>
+<pre><code>
+<img src="/posts/f840dc87/2.jpg" alt="2">
+</code></pre>
+</details>
+
+<br>
+
+<p>《我有一个朋友》</p>
+<p><img src="/posts/f840dc87/tsuki.jpg" alt="tsuki"></p>
+<details>
+<summary>《不要误解了》</summary>
+<pre><code>
+<img src="/posts/f840dc87/koi.jpg" alt="koi">
+</code></pre>
+</details>
+
+<details>
+<summary>总算是不用寂寞孤独冷的上网发帖了（笑</summary>
+<pre><code>
+<img src="/posts/f840dc87/146.png" style="zoom: 33%;">
+<img src="/posts/f840dc87/147.png" style="zoom: 33%;">
+</code></pre>
+</details>
+
+<br>
+
+<p><img src="/posts/f840dc87/waraeba.jpg" alt="waraeba"></p>
+<p>这个助手害羞了，大家快来一起调戏她（x</p>
+<br>
+
+<p><img src="/posts/f840dc87/meshimazu.jpg" alt="meshimazu"></p>
+<p>遭殃的到底是谁呢wwww</p>
+<p><img src="/posts/f840dc87/meshimazu2.jpg" alt="meshimazu2"></p>
+<p>知道错了，下次还敢）））</p>
+<br>
+
+<p><img src="/posts/f840dc87/konai.jpg" alt="konai"></p>
+<p>你这不是无理取闹吗~ww</p>
+<br>
+
+<p><img src="/posts/f840dc87/20240728144526_2.jpg" alt="20240728144526_2"><img src="/posts/f840dc87/20240728150103_1.jpg" alt="20240728150103_1"></p>
+<p><span style="background:#555559 !important;">虽然我觉得这条线的友情很谜……算了</span></p>
+<p>萌郁或许意外适合当天才少女的谈话对象（看了看隔壁真帆</p>
+<hr>
+<h3 id="三世因果的绑架-（三世因果のアブダクション-Three-Contrapasso-About-The-Abduction-）"><a href="#三世因果的绑架-（三世因果のアブダクション-Three-Contrapasso-About-The-Abduction-）" class="headerlink" title="三世因果的绑架 （三世因果のアブダクション-Three Contrapasso About The Abduction-）"></a>三世因果的绑架 （<ruby>三世因果のアブダクション<rt>-Three Contrapasso About The Abduction-</rt></ruby>）</h3><blockquote>
+<p>STORY 鳳凰院凶真<br>SCENARIO 打越鋼太郎<br>DIVERGENCE 4.456441</p>
+</blockquote>
+<br>
+
+<p>这条线可太好玩儿了</p>
+<p>大概只有凶真什么时候认真起来想靠比赛挣奖金才能脱出这段因果了吧（（（</p>
+<br>
+
+
+
+<p><img src="/posts/f840dc87/20240728174342_1.jpg" alt="20240728174342_1"></p>
+<p><img src="/posts/f840dc87/kuri.jpg" alt="kuri"></p>
+<p>果然只要知道是ねらー就会不断调戏www</p>
+<p><img src="/posts/f840dc87/20240728174545_1.jpg" alt="20240728174545_1"></p>
+<p>桶子和真由理一起做饭还边唱歌这画面想想就很美妙（x</p>
+<br>
+
+<p><img src="/posts/f840dc87/okabeee.jpg" alt="okabeee"></p>
+<p>槽点太多了都不知道该从哪开始吐槽了www</p>
+<p>这绕了一大圈的因果，绝对是迁怒www</p>
+<br>
+
+<p><img src="/posts/f840dc87/mate.jpg" alt="mate"></p>
+<p>冈伦终于疯了www RS能力有时候也非常不便呢（笑</p>
+<br>
+
+<p><img src="/posts/f840dc87/yu1.jpg" alt="yu1"></p>
+<p><img src="/posts/f840dc87/yu2.jpg" alt="yu2">胸に顔を埋めたまま？</p>
+<p>胸に顔を埋めたまま？？？</p>
+<p>冈伦你好鸡贼！！！</p>
+<br>
+
+<p><img src="/posts/f840dc87/onaji.jpg" alt="onaji"></p>
+<p>造成糟糕局面的不也是你吗（（（</p>
+<br>
+
+<p><img src="/posts/f840dc87/20240728212012_1.jpg" alt="20240728212012_1"></p>
+<p>“被跟踪”还要反复回头确认后面两人跟上了没有ww真由理简直不要更可爱</p>
+<br>
+
+<p><img src="/posts/f840dc87/kuruma.jpg" alt="kuruma"></p>
+<p><img src="/posts/f840dc87/20240728212605_1.jpg" alt="20240728212605_1"></p>
+<p><img src="/posts/f840dc87/20240728212639_1.jpg" alt="20240728212639_1"></p>
+<p><img src="/posts/f840dc87/kuruma2.jpg" alt="kuruma2"></p>
+<p><del>エロゲ！</del></p>
+<details>
+<summary>我又行了（自重</summary>
+<pre><code>
+<img src="/posts/f840dc87/20240728222954_1.jpg" alt="20240728222954_1">
+</code></pre>
+</details>
+
+<br>
+
+<p><img src="/posts/f840dc87/sidekick1.jpg" alt="sidekick1"></p>
+<p><img src="/posts/f840dc87/20240728213403_1.jpg" alt="20240728213403_1"></p>
+<p>这章冈伦起码说了三次“日本語で頼む”……笑死</p>
+<br>
+
+<p><img src="/posts/f840dc87/sidekick0.jpg" alt="sidekick0"></p>
+<p><img src="/posts/f840dc87/20240728213512_1.jpg" alt="20240728213512_1"></p>
+<p>好尊的词汇！简直不要太合适好吗！</p>
+<br>
+
+<p><img src="/posts/f840dc87/20240728214056_1.jpg" alt="20240728214056_1"></p>
+<p><img src="/posts/f840dc87/20240728214120_1.jpg" alt="20240728214120_1"></p>
+<p>Mad Scientist的武学也很Mad……笑麻了</p>
+<p>配合几个黑衣人的那几声“……？”更好笑了</p>
+<br>
+
+
+
+<p><img src="/posts/f840dc87/suki.jpg" alt="suki"></p>
+<p>冈伦：心情复杂</p>
+<br>
+
+<p><img src="/posts/f840dc87/sidekick2.jpg" alt="sidekick2"></p>
+<p>“赤の他人”wwww</p>
+<br>
+
+<p><img src="/posts/f840dc87/20240728220754_1.jpg" alt="20240728220754_1"></p>
+<p><img src="/posts/f840dc87/hito.jpg" alt="hito"></p>
+<p><img src="/posts/f840dc87/20240728221027_1.jpg" alt="20240728221027_1"></p>
+<p>真暖心~</p>
+<hr>
+<h3 id="月晕的彩虹桥（月暈のビヴロスト-Bifrost-of-Lunar-）"><a href="#月晕的彩虹桥（月暈のビヴロスト-Bifrost-of-Lunar-）" class="headerlink" title="月晕的彩虹桥（月暈のビヴロスト-Bifrost of Lunar-）"></a>月晕的彩虹桥（<ruby>月暈のビヴロスト<rt>-Bifrost of Lunar-</rt></ruby>）</h3><blockquote>
+<p>STORY 天王寺綯<br>SCENARIO 林直孝<br>DIVERGENCE 0.337161</p>
+</blockquote>
+<p><img src="/posts/f840dc87/20240728222323_1.jpg" alt="20240728222323_1">挺喜欢这章打破日常去冒险的那种氛围感，就如原文所说，像是爱丽丝某一天突然遇见了白兔，就是这只兔子太胖<del>太变态</del>了（笑</p>
+<p><img src="/posts/f840dc87/20240729141534_1.jpg" alt="20240729141534_1"></p>
+<p><img src="/posts/f840dc87/20240729141539_1.jpg" alt="20240729141539_1"></p>
+<p>绹酱，爱打电动，小小年纪就能进行一定程度的布朗管维修，怪不得派你去机器人笔记片场（x</p>
+<br>
+
+<p><img src="/posts/f840dc87/20240729114242_1.jpg" alt="20240729114242_1"></p>
+<p><img src="/posts/f840dc87/20240729115133_1.jpg" alt="20240729115133_1"></p>
+<p>桶子这章依旧变态本色……太变态了不想说啥了……</p>
+<p>不过树状图里帮了真由理（北极星那章）还帮了绹，真是<ruby>少女之友<rt>いいひと</rt></ruby>）</p>
+<p><img src="/posts/f840dc87/20240729135546_1.jpg" alt="20240729135546_1"></p>
+<p><img src="/posts/f840dc87/20240729140629_1.jpg" alt="20240729140629_1"></p>
+<p><img src="/posts/f840dc87/20240729140641_1.jpg" alt="20240729140641_1"></p>
+<p>其实dmail是发送失败了吧？但绹还是收到了父亲的信，感人55</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/SteinsGate/" rel="tag"># SteinsGate</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/31f7f72f.html" rel="prev" title="STEINS;GATE ELITE 游玩碎碎念">
+      <i class="fa fa-chevron-left"></i> STEINS;GATE ELITE 游玩碎碎念
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Start"><span class="nav-number">1.</span> <span class="nav-text">Start</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%89%AB%E6%8F%8F%E7%BA%BF%E4%B8%8A%E7%9A%84%E5%8C%96%E8%BA%AB%E5%8D%9A%E5%A3%AB%EF%BC%88%E8%B5%B0%E6%9F%BB%E7%B7%9A%E4%B8%8A%E3%81%AE%E3%82%B8%E3%82%AD%E3%83%AB-Dr-Jekyll-on-lines-%EF%BC%89"><span class="nav-number">2.</span> <span class="nav-text">扫描线上的化身博士（走査線上のジキル-Dr. Jekyll on lines-）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%9A%E7%83%82%E5%81%87%E6%83%B3%E7%9A%84%E8%9B%87%E8%9D%8E%E7%BE%8E%E4%BA%BA%EF%BC%88%E7%B5%A2%E7%88%9B%E4%BB%AE%E6%83%B3%E3%81%AE%E3%83%95%E3%82%A1%E3%83%A0%E3%83%95%E3%82%A1%E3%82%BF%E3%83%BC%E3%83%AB-Bird-Singing-in-Cage-%EF%BC%89"><span class="nav-number">3.</span> <span class="nav-text">绚烂假想的蛇蝎美人（絢爛仮想のファムファタール-Bird Singing in Cage-）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BB%84%E6%98%8F%E8%89%B2%E7%9A%84%E6%95%91%E4%B8%96%E4%B8%BB%EF%BC%88%E9%BB%84%E6%98%8F%E8%89%B2%E3%81%AE%E3%82%BD%E3%83%BC%E3%83%86%E3%83%BC%E3%83%AB-Vermilion-Sooteer-%EF%BC%89"><span class="nav-number">4.</span> <span class="nav-text">黄昏色的救世主（黄昏色のソーテール-Vermilion Sooteer-）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B9%BD%E7%81%B5%E9%9A%9C%E5%AE%B3%E7%9A%84%E4%BC%9A%E5%90%88%EF%BC%88%E5%B9%BD%E9%9C%8A%E9%9A%9C%E5%AE%B3%E3%81%AE%E3%83%A9%E3%83%B3%E3%83%87%E3%83%B4%E3%83%BC-Ghosting-Rendezvous-%EF%BC%89"><span class="nav-number">5.</span> <span class="nav-text">幽灵障害的会合（幽霊障害のランデヴー-Ghosting Rendezvous-）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9B%A8%E9%93%83%E9%93%83%E6%9B%B2%E7%9A%84%E6%B6%88%E9%99%A4%EF%BC%88%E9%9B%A8%E9%88%B4%E9%88%B4%E6%9B%B2%E3%81%AE%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%91%E3%83%BC-A-Strange-Building-Filled-Of-Love-%EF%BC%89"><span class="nav-number">6.</span> <span class="nav-text">雨铃铃曲的消除（雨鈴鈴曲のスクレイパー-A Strange Building Filled Of Love-）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A1%83%E8%89%B2%E5%B9%BB%E9%83%BD%E7%9A%84%E9%BB%91%E7%8C%AB%EF%BC%88%E6%A1%83%E8%89%B2%E5%B9%BB%E9%83%BD%E3%81%AE%E3%82%B7%E3%83%A3%E3%83%BB%E3%83%8E%E3%83%AF%E3%83%BC%E3%83%AB-Super-hero-Chat-noir-%EF%BC%89"><span class="nav-number">7.</span> <span class="nav-text">桃色幻都的黑猫（桃色幻都のシャ・ノワール-Super hero Chat-noir-）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%B7%E5%AE%AB%E9%94%99%E7%BB%BC%E7%9A%84%E9%9B%8C%E9%9B%84%E5%85%B1%E4%BD%93%EF%BC%88%E8%BF%B7%E5%AE%AE%E9%8C%AF%E7%B6%9C%E3%81%AE%E3%83%98%E3%83%AB%E3%83%9E%E3%83%95%E3%83%AD%E3%83%87%E3%82%A3%E3%83%88%E3%82%B9-Hermaphroditus-in-Labyrinth-%EF%BC%89"><span class="nav-number">8.</span> <span class="nav-text">迷宫错综的雌雄共体（迷宮錯綜のヘルマフロディトス-Hermaphroditus in Labyrinth-）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%82%A0%E8%BF%9C%E4%B8%8D%E5%8F%98%E7%9A%84%E5%8C%97%E6%9E%81%E6%98%9F%EF%BC%88%E6%82%A0%E9%81%A0%E4%B8%8D%E5%A4%89%E3%81%AE%E3%83%9D%E3%83%A9%E3%83%AA%E3%82%B9-EternaPolaris-%EF%BC%89"><span class="nav-number">9.</span> <span class="nav-text">悠远不变的北极星（悠遠不変のポラリス-EternaPolaris-）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%8F%E7%9D%A1%E5%8A%B1%E8%B5%B7%E7%9A%84%E9%87%8F%E5%AD%90%EF%BC%88%E6%98%8F%E7%9D%A1%E5%8A%B1%E8%B5%B7%E3%81%AE%E3%82%AF%E3%82%A2%E3%83%B3%E3%82%BF%E3%83%A0-Quantum-excited-in-Coma-%EF%BC%89"><span class="nav-number">10.</span> <span class="nav-text">昏睡励起的量子（昏睡励起のクアンタム-Quantum excited in Coma-）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E4%B8%96%E5%9B%A0%E6%9E%9C%E7%9A%84%E7%BB%91%E6%9E%B6-%EF%BC%88%E4%B8%89%E4%B8%96%E5%9B%A0%E6%9E%9C%E3%81%AE%E3%82%A2%E3%83%96%E3%83%80%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3-Three-Contrapasso-About-The-Abduction-%EF%BC%89"><span class="nav-number">11.</span> <span class="nav-text">三世因果的绑架 （三世因果のアブダクション-Three Contrapasso About The Abduction-）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%88%E6%99%95%E7%9A%84%E5%BD%A9%E8%99%B9%E6%A1%A5%EF%BC%88%E6%9C%88%E6%9A%88%E3%81%AE%E3%83%93%E3%83%B4%E3%83%AD%E3%82%B9%E3%83%88-Bifrost-of-Lunar-%EF%BC%89"><span class="nav-number">12.</span> <span class="nav-text">月晕的彩虹桥（月暈のビヴロスト-Bifrost of Lunar-）</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="望月木"
+      src="/uploads/avatar-2.jpg">
+  <p class="site-author-name" itemprop="name">望月木</p>
+  <div class="site-description" itemprop="description"><br>望月木's blog<br>随意堆放些喜欢的东西<br>请善用分类和标签进行检索<br><br></div>
+</div>
+  <div class="">
+    <a target="_blank" class="social-link" href="/atom.xml" style="color: #FC9A00;">
+      <span class="icon">
+        <i class="fa fa-rss"></i>
+      </span>
+      <span class="label">RSS</span>
+    </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/903508" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;903508" rel="noopener" target="_blank">Bilibili</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/3893250770" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;3893250770" rel="noopener" target="_blank">Weibo</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2022 – 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-leaf"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">望月木</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-tree"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">82k</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
