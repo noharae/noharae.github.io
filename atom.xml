@@ -109,27 +109,6 @@
   </entry>
   
   <entry>
-    <title>导航页</title>
-    <link href="https://noharae.github.io/posts/e3a21bbf.html"/>
-    <id>https://noharae.github.io/posts/e3a21bbf.html</id>
-    <published>2024-09-22T11:09:54.000Z</published>
-    <updated>2024-09-30T13:52:14.214Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>　　之前用的网址收藏服务收费了……无奈折腾了半天，用netlify部署<a href="https://github.com/xjh22222228/nav">这个</a>，终于成功整了个自用导航页……太难为非程序猿了……</p><p>　　希望以后不用再折腾了……再也不想整理链接了555</p><br><p><a href="http://noharae.eu.org/nav/">导航页链接1</a>  </p><p><a href="https://noharanav.netlify.app/">导航页链接2（国内访问较快）</a></p>]]></content>
-    
-    
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;</summary>
-    
-    
-    
-    <category term="杂货堆" scheme="https://noharae.github.io/categories/%E6%9D%82%E8%B4%A7%E5%A0%86/"/>
-    
-    
-    <category term="折腾" scheme="https://noharae.github.io/tags/%E6%8A%98%E8%85%BE/"/>
-    
-  </entry>
-  
-  <entry>
     <title>SG标题整理</title>
     <link href="https://noharae.github.io/posts/28250248.html"/>
     <id>https://noharae.github.io/posts/28250248.html</id>
@@ -215,9 +194,9 @@
     <category term="随便写写" scheme="https://noharae.github.io/categories/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/"/>
     
     
-    <category term="Celeste" scheme="https://noharae.github.io/tags/Celeste/"/>
-    
     <category term="记录" scheme="https://noharae.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="Celeste" scheme="https://noharae.github.io/tags/Celeste/"/>
     
   </entry>
   
@@ -238,9 +217,9 @@
     <category term="随便写写" scheme="https://noharae.github.io/categories/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/"/>
     
     
-    <category term="日常" scheme="https://noharae.github.io/tags/%E6%97%A5%E5%B8%B8/"/>
-    
     <category term="Celeste" scheme="https://noharae.github.io/tags/Celeste/"/>
+    
+    <category term="日常" scheme="https://noharae.github.io/tags/%E6%97%A5%E5%B8%B8/"/>
     
     <category term="SteinsGate" scheme="https://noharae.github.io/tags/SteinsGate/"/>
     
