@@ -112,8 +112,8 @@
 <li><input checked disabled type="checkbox"> 部署了个导航页（咦好像和blog没有什么关系）</li>
 </ul>
 <hr>
-<h2 id="咕咕中"><a href="#咕咕中" class="headerlink" title="咕咕中"></a>咕咕中</h2><ul>
-<li><input disabled type="checkbox"> 评论功能</li>
+<h3 id="2024-11-20"><a href="#2024-11-20" class="headerlink" title="2024.11.20"></a>2024.11.20</h3><ul>
+<li><input checked disabled type="checkbox"> 搞了个新域名和其它杂七杂八</li>
 </ul>
 ]]></content>
       <categories>
@@ -4943,7 +4943,7 @@ password:
 <td>#23</td>
 <td>無限遠点のアークライト</td>
 <td>Arc-light of the Sky</td>
-<td>无限远点的弧光</td>
+<td>无限远点的弧光灯</td>
 </tr>
 <tr>
 <td>#23</td>
@@ -9190,6 +9190,21 @@ gay里gay气的
       <tags>
         <tag>吐槽</tag>
         <tag>SteinsGate</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新域名&amp;新页面</title>
+    <url>/posts/e413c091.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>折腾完了，但是懒得记录了。。。</p>
+<p>总之弄了个<a href="https://571046.xyz/">新页面</a>，换了个<a href="https://571046.xyz/nav.html">导航页</a>，再部署了个telegram broadcast到vercel上当<a href="https://memo.571046.xyz/">个人微博</a>用，感谢gpt助力小白瞎折腾（）</p>
+<p>虽然想把blog的域名也顺便统一一下，不过有些麻烦……算了，就先这样吧</p>
+<p>gpt4o真不错……现在还能联网了，香……</p>
+]]></content>
+      <categories>
+        <category>杂货堆</category>
+      </categories>
+      <tags>
+        <tag>折腾</tag>
       </tags>
   </entry>
 </search>
