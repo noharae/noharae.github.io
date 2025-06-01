@@ -6,7 +6,7 @@
   <link href="https://noharae.github.io/atom.xml" rel="self"/>
   
   <link href="https://noharae.github.io/"/>
-  <updated>2025-02-04T12:16:54.409Z</updated>
+  <updated>2025-06-01T03:09:43.178Z</updated>
   <id>https://noharae.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>新导航页</title>
+    <link href="https://noharae.github.io/posts/74437e40.html"/>
+    <id>https://noharae.github.io/posts/74437e40.html</id>
+    <published>2025-06-01T02:26:38.000Z</published>
+    <updated>2025-06-01T03:09:43.178Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>一点更新：删掉了原先的汇总页，改造了导航页</p><p>感谢鹿の<ruby><del>协力</del><rt>主力</rt></ruby>🎉</p><p>随便改改（x） 完全重写（✓）</p><p>在简洁美观的基础上，打开侧边栏还加了辉光管数字效果，石厨狂喜！<span style="background:#555559 !important;">（被特效诱惑完全忘记追求简洁的初衷orz）</span></p><br><p>最后留个gpt写的旧页面截图留念一下</p><details><summary>再见了，所有的gpt</summary><pre><code><img src="/posts/74437e40/截图20250530201759.jpg" alt="截图20250530201759"><img src="/posts/74437e40/截图20250530201817.jpg" alt="截图20250530201817"></code></pre></details><br><p><span style="background:#555559 !important;">新网页名用了一个谐音，</span>在我想到更好的网页名之前就先保持和<code>電話レンジ（仮）</code>一样的句式吧（）</p>]]></content>
+    
+    
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;</summary>
+    
+    
+    
+    <category term="杂货堆" scheme="https://noharae.github.io/categories/%E6%9D%82%E8%B4%A7%E5%A0%86/"/>
+    
+    
+    <category term="折腾" scheme="https://noharae.github.io/tags/%E6%8A%98%E8%85%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>STEINS;GATE 比翼碎碎念</title>
